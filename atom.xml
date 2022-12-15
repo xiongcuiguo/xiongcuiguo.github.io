@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-15T04:50:34.869Z</updated>
+  <updated>2022-12-15T05:21:54.769Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2022-12-15-wo-de-dao-yu.html"/>
     <id>http://example.com/2022-12-15-wo-de-dao-yu.html</id>
     <published>2022-12-15T04:48:50.000Z</published>
-    <updated>2022-12-15T04:50:34.869Z</updated>
+    <updated>2022-12-15T05:21:54.769Z</updated>
     
     
       
@@ -34,6 +34,14 @@
     
     
     
+    <category term="软件安装与配置" scheme="http://example.com/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="Hexo" scheme="http://example.com/tags/Hexo/"/>
+    
+    <category term="Github" scheme="http://example.com/tags/Github/"/>
+    
+    <category term="博客" scheme="http://example.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
