@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>rabbitMq安装</title>
+      <link href="/archives/1bf22ab0.html"/>
+      <url>/archives/1bf22ab0.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3><span id="rabbitmq急速入门">RabbitMQ急速入门</span></h3><hr><p>急速入门，在这里我们使用RabbitMQ 3.6.5 版本进行操作：</p><ul><li><p>环境搭建：</p></li><li><p>官网地址：<a href="http://www.rabbitmq.com/">http://www.rabbitmq.com/</a></p></li><li><p>环境描述：Linux（centos7 Redhat7）</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li></ul><h2><span id="1-首先在linux上进行一些软件的准备工作yum下来一些基础的软件包">1. 首先在Linux上进行一些软件的准备工作，yum下来一些基础的软件包</span></h2><p>yum install build-essential openssl openssl-devel unixODBC unixODBC-devel make gcc gcc-c++ kernel-devel m4 ncurses-devel tk tc xz</p><h2><span id="配置好主机名称etchosts-etchostname">配置好主机名称：/etc/hosts /etc/hostname</span></h2><h2><span id="2-下载rabbitmq所需软件包本神在这里使用的是-rabbitmq365-稳定版本">2. 下载RabbitMQ所需软件包（本神在这里使用的是 RabbitMQ3.6.5 稳定版本）</span></h2><p>wget <a href="http://www.rabbitmq.com/releases/erlang/erlang-18.3-1.el7.centos.x86_64.rpm">www.rabbitmq.com/releases/erlang/erlang-18.3-1.el7.centos.x86_64.rpm</a><br>wget <a href="http://repo.iotti.biz/CentOS/7/x86_64/socat-1.7.3.2-1.1.el7.lux.x86_64.rpm">http://repo.iotti.biz/CentOS/7/x86_64/socat-1.7.3.2-1.1.el7.lux.x86_64.rpm</a><br>wget <a href="http://www.rabbitmq.com/releases/rabbitmq-server/v3.6.5/rabbitmq-server-3.6.5-1.noarch.rpm">www.rabbitmq.com/releases/rabbitmq-server/v3.6.5/rabbitmq-server-3.6.5-1.noarch.rpm</a></p><h2><span id="3-安装服务命令">3. 安装服务命令</span></h2><p>rpm -ivh erlang-18.3-1.el7.centos.x86_64.rpm<br>rpm -ivh socat-1.7.3.2-1.1.el7.x86_64.rpm<br>rpm -ivh rabbitmq-server-3.6.5-1.noarch.rpm</p><h2><span id="4-修改用户登录与连接心跳检测注意修改">4. 修改用户登录与连接心跳检测，注意修改</span></h2><p>vim /usr/lib/rabbitmq/lib/rabbitmq_server-3.6.5/ebin/rabbit.app<br>修改点1：loopback_users 中的 &lt;&lt;”guest”&gt;&gt;,只保留guest （用于用户登录）<br>修改点2：heartbeat 为10（用于心跳连接）</p><h2><span id="5-安装管理插件">5. 安装管理插件</span></h2><h2><span id="51-首先启动服务后面-包含了停止-查看状态以及重启的命令">5.1 首先启动服务(后面 | 包含了停止、查看状态以及重启的命令)</span></h2><p>/etc/init.d/rabbitmq-server start | stop | status | restart</p><h2><span id="52-查看服务有没有启动-lsof-i5672-5672是rabbit的默认端口">5.2 查看服务有没有启动： lsof -i:5672 （5672是Rabbit的默认端口）</span></h2><p>rabbitmq-plugins enable rabbitmq_management</p><h2><span id="53-可查看管理端口有没有启动">5.3 可查看管理端口有没有启动：</span></h2><p>lsof -i:15672 或者 netstat -tnlp | grep 15672</p><h2><span id="6-一切ok-我们访问地址输入用户名密码均为-guest">6. 一切OK 我们访问地址，输入用户名密码均为 guest ：</span></h2><h2><span id="http你的ip地址15672">http://你的ip地址:15672/</span></h2><h2><span id="7-如果一切顺利那么到此为止我们的环境已经安装完啦">7. 如果一切顺利，那么到此为止，我们的环境已经安装完啦</span></h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件安装 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rabbitMq </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/archives/4a17b156.html"/>
       <url>/archives/4a17b156.html</url>
@@ -294,7 +319,7 @@
       <link href="/archives/ec9e49df.html"/>
       <url>/archives/ec9e49df.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>d大苏打撒旦</p><p>大师傅打发撒旦</p><p>大撒大撒</p><p>dasdsa</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>d大苏打撒旦</p><p>大师傅打发撒旦</p><p>大撒大撒</p><p>dasdsa</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">performInitialization</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token function">bind</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">INITIALIZATION_STATE</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token function">versionSanityCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       <categories>
@@ -323,7 +348,7 @@
       <link href="/archives/ec9e49df.html"/>
       <url>/archives/ec9e49df.html</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>d大苏打撒旦</p><p>大师傅打发撒旦</p><p>大撒大撒</p><p>dasdsa</p><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">void</span> <span class="token function">performInitialization</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token function">bind</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">INITIALIZATION_STATE</span> <span class="token operator">==</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        <span class="token function">versionSanityCheck</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>d大苏打撒旦</p><p>大师傅打发撒旦</p><p>大撒大撒</p><p>dasdsa</p>]]></content>
       
       
       <categories>

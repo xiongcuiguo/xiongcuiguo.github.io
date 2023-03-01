@@ -1,4 +1,4 @@
-https://www.southbear.cn/archives/4a17b156.html
+https://www.southbear.cn/archives/1bf22ab0.html
 https://www.southbear.cn/archives/4a17b156.html
 https://www.southbear.cn/archives/4a17b156.html
 https://www.southbear.cn/archives/4a17b156.html
@@ -21,6 +21,7 @@ https://www.southbear.cn/archives/4a17b156.html
 https://www.southbear.cn/archives/4a17b156.html
 https://www.southbear.cn/archives/4a17b156.html
 https://www.southbear.cn/archives/ec9e49df.html
+https://www.southbear.cn/archives/4a17b156.html
 https://www.southbear.cn/archives/ec9e49df.html
 https://www.southbear.cn/404/index.html
 https://www.southbear.cn/friends/index.html
@@ -32,4 +33,6 @@ https://www.southbear.cn/
 https://www.southbear.cn/tags/Hexo/
 https://www.southbear.cn/tags/Github/
 https://www.southbear.cn/tags/%E5%8D%9A%E5%AE%A2/
+https://www.southbear.cn/tags/rabbitMq/
 https://www.southbear.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/
+https://www.southbear.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/
