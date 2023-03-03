@@ -1,0 +1,2631 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+
+    <script>
+        (function(){
+        var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+            })();
+    </script>
+ 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="MD的Emoji表情, 南方的熊">
+    <meta name="description" content="前言：自从接触了markdown编辑器之后，一发不可收拾，看着自己的整理的笔记都特别赏心悦目。目前文档都是用markdown来写的,个人电脑用的是typora这个软件。markdown的语法其实并不难，花点心思，多敲几下就能上手，本篇是我自己使用过程中整理的一些语法，内容较多，有需要的同学可以自行收录，后续如果有新的比较好用的语法也会更新在本篇随笔。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>MD的Emoji表情 | 南方的熊</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="南方的熊" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">南方的熊</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">南方的熊</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/MD/1.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">MD的Emoji表情</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/MD%E8%A1%A8%E6%83%85/">
+                                <span class="chip bg-color">MD表情</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/MD/" class="post-category">
+                                MD
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-11
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    6 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
+<blockquote>
+<p>自从接触了markdown编辑器之后，一发不可收拾，看着自己的整理的笔记都特别赏心悦目。目前文档都是用markdown来写的,个人电脑用的是typora这个软件。markdown的语法其实并不难，花点心思，多敲几下就能上手，本篇是我自己使用过程中整理的一些语法，内容较多，有需要的同学可以自行收录，后续如果有新的比较好用的语法也会更新在本篇随笔。</p>
+</blockquote>
+<h1 id="表情"><a href="#表情" class="headerlink" title="表情"></a>表情</h1><hr>
+<h2 id="直接复制使用"><a href="#直接复制使用" class="headerlink" title="直接复制使用"></a>直接复制使用</h2><h3 id="表情-1"><a href="#表情-1" class="headerlink" title="表情"></a>表情</h3><p>😀😃😄😁😆😅🤣😂🙂🙃😉😊😇🥰😍🤩😘😗☺️😚😙🥲😋😛😜🤪😝🤑🤗🤭🤫🤔🤐🤨😐😑😶😏😒🙄😬🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯🤠🥳🥸😎🤓🧐😕😟🙁☹️😮😯😲😳🥺😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😤😡😠🤬</p>
+<h3 id="人物"><a href="#人物" class="headerlink" title="#人物"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E4%BA%BA%E7%89%A9">#</a>人物</h3><p>👶🧒👦👧🧑👱👨🧔👨‍🦰👨‍🦱👨‍🦳👨‍🦲👩👩‍🦰🧑‍🦰👩‍🦱🧑‍🦱👩‍🦳🧑‍🦳👩‍🦲🧑‍🦲👱‍♀️👱‍♂️🧓👴👵🙍🙍‍♂️🙍‍♀️🙎🙎‍♂️🙎‍♀️🙅🙅‍♂️🙅‍♀️🙆🙆‍♂️🙆‍♀️💁💁‍♂️💁‍♀️🙋🙋‍♂️🙋‍♀️🧏🧏‍♂️🧏‍♀️🙇🙇‍♂️🙇‍♀️🤦🤦‍♂️🤦‍♀️🤷🤷‍♂️🤷‍♀️🧑‍⚕️👨‍⚕️👩‍⚕️🧑‍🎓👨‍🎓👩‍🎓🧑‍🏫👨‍🏫👩‍🏫🧑‍⚖️👨‍⚖️👩‍⚖️🧑‍🌾👨‍🌾👩‍🌾🧑‍🍳👨‍🍳👩‍🍳🧑‍🔧👨‍🔧👩‍🔧🧑‍🏭👨‍🏭👩‍🏭🧑‍💼👨‍💼👩‍💼🧑‍🔬👨‍🔬👩‍🔬🧑‍💻👨‍💻👩‍💻🧑‍🎤👨‍🎤👩‍🎤🧑‍🎨👨‍🎨👩‍🎨🧑‍✈️👨‍✈️👩‍✈️🧑‍🚀👨‍🚀👩‍🚀🧑‍🚒👨‍🚒👩‍🚒👮👮‍♂️👮‍♀️🕵️🕵️‍♂️🕵️‍♀️💂💂‍♂️💂‍♀️🥷👷👷‍♂️👷‍♀️🤴👸👳👳‍♂️👳‍♀️👲🧕🤵🤵‍♂️🤵‍♀️👰👰‍♂️👰‍♀️🤰🤱👩‍🍼👨‍🍼🧑‍🍼👼🎅🤶🧑‍🎄🦸🦸‍♂️🦸‍♀️🦹🦹‍♂️🦹‍♀️🧙🧙‍♂️🧙‍♀️🧚🧚‍♂️🧚‍♀️🧛🧛‍♂️🧛‍♀️🧜🧜‍♂️🧜‍♀️🧝🧝‍♂️🧝‍♀️🧞🧞‍♂️🧞‍♀️🧟🧟‍♂️🧟‍♀️💆💆‍♂️💆‍♀️💇💇‍♂️💇‍♀️🚶🚶‍♂️🚶‍♀️🧍🧍‍♂️🧍‍♀️🧎🧎‍♂️🧎‍♀️🧑‍🦯👨‍🦯👩‍🦯🧑‍🦼👨‍🦼👩‍🦼🧑‍🦽👨‍🦽👩‍🦽🏃🏃‍♂️🏃‍♀️💃🕺🕴️👯👯‍♂️👯‍♀️🧖🧖‍♂️🧖‍♀️🧘🧑‍🤝‍🧑👭👫👬💏👩‍❤️‍💋‍👨👨‍❤️‍💋‍👨👩‍❤️‍💋‍👩💑👩‍❤️‍👨👨‍❤️‍👨👩‍❤️‍👩👪👨‍👩‍👦👨‍👩‍👧👨‍👩‍👧‍👦👨‍👩‍👦‍👦👨‍👩‍👧‍👧👨‍👨‍👦👨‍👨‍👧👨‍👨‍👧‍👦👨‍👨‍👦‍👦👨‍👨‍👧‍👧👩‍👩‍👦👩‍👩‍👧👩‍👩‍👧‍👦👩‍👩‍👦‍👦👩‍👩‍👧‍👧👨‍👦👨‍👦‍👦👨‍👧👨‍👧‍👦👨‍👧‍👧👩‍👦👩‍👦‍👦👩‍👧👩‍👧‍👦👩‍👧‍👧🗣️👤👥</p>
+<h3 id="手势"><a href="#手势" class="headerlink" title="#手势"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%89%8B%E5%8A%BF">#</a>手势</h3><p>👋🤚🖐️✋🖖👌🤌🤏✌️🤞🤟🤘🤙👈👉👆🖕👇☝️👍👎✊👊🤛🤜👏🙌👐🤲🤝🙏✍️💅🤳💪</p>
+<h3 id="日常"><a href="#日常" class="headerlink" title="#日常"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%97%A5%E5%B8%B8">#</a>日常</h3><p>👣👀👁️👄💋👂🦻👃👅🧠🫀🫁🦷🦴💪🦾🦿🦵🦶👓🕶️🥽🥼🦺👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🎒🩴👞👟🥾🥿👠👡🩰👢👑👒🎩🎓🧢🪖⛑️💄💅💍💼🌂☂️💈🛀🛌💥💫💦💨</p>
+<h3 id="手机"><a href="#手机" class="headerlink" title="#手机"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%89%8B%E6%9C%BA">#</a>手机</h3><p>📱📲📶📳📴☎📞📟📠🤳</p>
+<h3 id="公共"><a href="#公共" class="headerlink" title="#公共"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E5%85%AC%E5%85%B1">#</a>公共</h3><p>♻🏧🚮🚰♿🚹🚺🚻🚼🚾⚠🚸⛔🚫🚳🚭🚯🚱🚷🔞💈</p>
+<h3 id="动物"><a href="#动物" class="headerlink" title="#动物"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E5%8A%A8%E7%89%A9">#</a>动物</h3><p>🙈🙉🙊💥💫💦💨🐵🐒🦍🦧🐶🐕🦮🐕‍🦺🐩🐺🦊🦝🐱🐈🐈‍⬛🦁🐯🐅🐆🐴🐎🦄🦓🦌🦬🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🦙🦒🐘🦏🦛🐭🐁🐀🐹🐰🐇🐿️🦫🦔🦇🐻🐻‍❄️🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🐧🕊️🦅🦆🦢🦉🦩🦚🦜🐸🐊🐢🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🐌🦋🐛🐜🐝🪲🐞🦗🪳🕷️🕸️🦂🦟🦠🦀🦞🦐🦑</p>
+<h3 id="植物"><a href="#植物" class="headerlink" title="#植物"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%A4%8D%E7%89%A9">#</a>植物</h3><p>💐🌸💮🏵️🌹🥀🌺🌻🌼🌷🌱🌲🌳🌴🌵🌾🌿☘️🍀🍁🍂🍃</p>
+<h3 id="自然"><a href="#自然" class="headerlink" title="#自然"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E8%87%AA%E7%84%B6">#</a>自然</h3><p>🌍🌎🌏🌐🪨🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜☀️🌝🌞⭐🌟🌠☁️⛅⛈️🌤️🌥️🌦️🌧️🌨️🌩️🌪️🌫️🌬️🌈☂️☔⚡❄️☃️⛄☄️🔥💧🌊</p>
+<h3 id="饮食"><a href="#饮食" class="headerlink" title="#饮食"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E9%A5%AE%E9%A3%9F">#</a>饮食</h3><p>🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🥝🍅🥥🥑🍆🥔🥕🌽🌶️🥒🥬🥦🧄🧅🍄🥜🌰🍞🥐🥖🫓🥨🥯🥞🧇🧀🍖🍗🥩🥓🍔🍟🍕🌭🥪🌮🌯🥙🧆🥚🍳🥘🍲🥣🥗🍿🧈🧂🥫🍱🍘🍙🍚🍛🍜🍝🍠🍢🍣🍤🍥🥮🍡🥟🥠🥡🦪🍦🍧🍨🍩🍪🎂🍰🧁🥧🍫🍬🍭🍮🍯🍼🥛☕🫖🍵🍶🍾🍷🍸🍹🍺🍻🥂🥃🥤🧋🧃🧉🧊🥢🍽️🍴🥄</p>
+<h3 id="文体"><a href="#文体" class="headerlink" title="#文体"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%96%87%E4%BD%93">#</a>文体</h3><p>🧗🧗‍♂️🧗‍♀️🤺🏇⛷️🏂🏌️🏌️‍♂️🏌️‍♀️🏄🏄‍♂️🏄‍♀️🚣🚣‍♂️🚣‍♀️🏊🏊‍♂️🏊‍♀️⛹️⛹️‍♂️⛹️‍♀️🏋️🏋️‍♂️🏋️‍♀️🚴🚴‍♂️🚴‍♀️🚵🚵‍♂️🚵‍♀️🤸🤸‍♂️🤸‍♀️🤼🤼‍♂️🤼‍♀️🤽🤽‍♂️🤽‍♀️🤾🤾‍♂️🤾‍♀️🤹🤹‍♂️🤹‍♀️🧘🧘‍♂️🧘‍♀️🎪🛹🛼🛶🎗️🎟️🎫🎖️🏆🏅🥇🥈🥉⚽⚾🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸️🎣🎽🎿🛷🥌🎯🎱🎮🎰🎲🧩♟️🎭🎨🧵🧶🎼🎤🎧🎷🪗🎸🎹🎺🎻🥁🪘🎬🏹</p>
+<h3 id="恐怖"><a href="#恐怖" class="headerlink" title="#恐怖"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%81%90%E6%80%96">#</a>恐怖</h3><p>😈👿👹👺💀☠👻👽👾💣</p>
+<h3 id="旅游"><a href="#旅游" class="headerlink" title="#旅游"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%97%85%E6%B8%B8">#</a>旅游</h3><p>👣🎠🎡🎢🚣🏔️⛰️🌋🗻🏕️🏖️🏜️🏝️🏞️🏟️🏛️🏗️🛖🏘️🏚️🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪🕌🛕🕍⛩🕋⛲⛺🌁🌃🏙️🌄🌅🌆🌇🌉🎠🎡🎢🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚒🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎️🏍️🛵🛺🚲🛴🚏🛣️🛤️⛽🚨🚥🚦🚧⚓⛵🚤🛳️⛴️🛥️🚢✈️🛩️🛫🛬🪂💺🚁🚟🚠🚡🛰️🚀🛸🪐🌠🌌⛱️🎆🎇🎑💴💵💶💷🗿🛂🛃🛄🛅🧭</p>
+<h3 id="物品"><a href="#物品" class="headerlink" title="#物品"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E7%89%A9%E5%93%81">#</a>物品</h3><p>💌💎🔪💈🚪🚽🚿🛁⌛⏳⌚⏰🎈🎉🎊🎎🎏🎐🎀🎁📯📻📱📲☎📞📟📠🔋🔌💻💽💾💿📀🎥📺📷📹📼🔍🔎🔬🔭📡💡🔦🏮📔📕📖📗📘📙📚📓📃📜📄📰📑🔖💰💴💵💶💷💸💳✉📧📨📩📤📥📦📫📪📬📭📮✏✒📝📁📂📅📆📇📈📉📊📋📌📍📎📏📐✂🔒🔓🔏🔐🔑🔨🔫🔧🔩🔗💉💊🚬🔮🚩🎌💦💨</p>
+<h3 id="标志"><a href="#标志" class="headerlink" title="#标志"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%A0%87%E5%BF%97">#</a>标志</h3><p>♠️♥️♦️♣️🃏🀄🎴🔇🔈🔉🔊📢📣📯🔔🔕🎵🎶💹🛗🏧🚮🚰♿🚹🚺🚻🚼🚾⚠️🚸⛔🚫🚳🚭🚯🚱🚷📵🔞☢️☣️⬆️↗️➡️↘️⬇️↙️⬅️↖️↕️↔️↩️↪️⤴️⤵️🔃🔄🔙🔚🔛🔜🔝🛐⚛️🕉️✡️☸️☯️✝️☦️☪️☮️🕎🔯♈♉♊♋♌♍♎♏♐♑♒♓⛎🔀🔁🔂▶️⏩⏭️⏯️◀️⏪⏮️🔼⏫🔽⏬⏸️⏹️⏺️⏏️🎦🔅🔆📶📳📴♀️♂️✖️➕➖➗♾️‼️⁉️❓❔❕❗〰️💱💲⚕️♻️⚜️🔱📛🔰⭕✅☑️✔️❌❎➰➿ 〽️✳️✴️❇️©️®️™️#️⃣*️⃣0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟🔠🔡🔢🔣🔤🅰️🆎🅱️🆑🆒🆓ℹ️🆔Ⓜ️🆕🆖🅾️🆗🅿️🆘🆙🆚🈁🈂️🈷️🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗️㊙️🈺🈵🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼️◻️◾◽▪️▫️🔶🔷🔸🔹🔺🔻💠🔘🔳🔲🏁🚩🎌🏴🏳️🏳️‍🌈🏳️‍⚧️🏴‍☠️</p>
+<h3 id="生肖"><a href="#生肖" class="headerlink" title="#生肖"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E7%94%9F%E8%82%96">#</a>生肖</h3><p>🐁🐂🐅🐇🐉🐍🐎🐐🐒🐓🐕🐖</p>
+<h3 id="星座"><a href="#星座" class="headerlink" title="#星座"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%98%9F%E5%BA%A7">#</a>星座</h3><p>♈♉♊♋♌♍♎♏♐♑♒♓⛎</p>
+<h3 id="钟表"><a href="#钟表" class="headerlink" title="#钟表"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E9%92%9F%E8%A1%A8">#</a>钟表</h3><p>🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦⌛⏳⌚⏰⏱⏲🕰</p>
+<h3 id="心形"><a href="#心形" class="headerlink" title="#心形"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E5%BF%83%E5%BD%A2">#</a>心形</h3><p>💘❤💓💔💕💖💗💙💚💛💜💝💞💟❣</p>
+<h3 id="花草"><a href="#花草" class="headerlink" title="#花草"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E8%8A%B1%E8%8D%89">#</a>花草</h3><p>💐🌸💮🏵️🌹🥀🌺🌻🌼🌷🌱🌿☘️🍀</p>
+<h3 id="树叶"><a href="#树叶" class="headerlink" title="#树叶"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%A0%91%E5%8F%B6">#</a>树叶</h3><p>🌿☘️🍀🍁🍂🍃</p>
+<h3 id="月亮"><a href="#月亮" class="headerlink" title="#月亮"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%9C%88%E4%BA%AE">#</a>月亮</h3><p>🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌝</p>
+<h3 id="水果"><a href="#水果" class="headerlink" title="#水果"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E6%B0%B4%E6%9E%9C">#</a>水果</h3><p>🍇🍈🍉🍊🍋🍌🍍🍎🍏🍐🍑🍒🍓🥝</p>
+<h3 id="钱币"><a href="#钱币" class="headerlink" title="#钱币"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E9%92%B1%E5%B8%81">#</a>钱币</h3><p>💴💵💶💷💰💸💳</p>
+<h3 id="圣诞"><a href="#圣诞" class="headerlink" title="#圣诞"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E5%9C%A3%E8%AF%9E">#</a>圣诞</h3><p>🎅🤶🎄🦌🛷🔔🧦❄☃⛄🔥🌟🕯🎶⛪🛐✝🎁💐🍰🧧🍎🍏🍷🥂🍾🍽🍴🥚🥩🍗</p>
+<h3 id="交通"><a href="#交通" class="headerlink" title="#交通"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E4%BA%A4%E9%80%9A">#</a>交通</h3><p>🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚏🚐🚑🚒🚓🚔🚕🚖🚗🚘🚚🚛🚜🚲⛽🚨🚥🚦🚧⚓⛵🚣🚤🚢✈💺🚁🚟🚠🚡🚀</p>
+<h3 id="建筑"><a href="#建筑" class="headerlink" title="#建筑"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E5%BB%BA%E7%AD%91">#</a>建筑</h3><p>🏟️🏛️🏗️🛖🏘️🏚️🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪🕌🛕🕍⛩️🕋⛲⛺🌁🌃🏙️🌄🌅🌆🌇🌉</p>
+<h3 id="办公"><a href="#办公" class="headerlink" title="#办公"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E5%8A%9E%E5%85%AC">#</a>办公</h3><p>📱📲☎️📞📟📠🔋🔌💻🖥️🖨️⌨️🖱️🖲️💽💾💿📀🧮🎥🎞️📽️📺📷📸📹📼🔍🔎🕯️💡🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞️📑🔖🏷️💰🪙💴💵💶💷💸💳🧾✉️📧📨📩📤📥📦📫📪📬📭📮🗳️✏️✒️🖋️🖊️🖌️🖍️📝📁📂🗂️📅📆🗒️🗓️📇📈📉📊📋📌📍📎🖇️📏📐✂️🗃️🗄️🗑️🔒🔓🔏🔐🔑🗝️</p>
+<h3 id="箭头"><a href="#箭头" class="headerlink" title="#箭头"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/emoji.html#%E7%AE%AD%E5%A4%B4">#</a>箭头</h3><p>⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝</p>
+<h2 id="MD表情符号"><a href="#MD表情符号" class="headerlink" title="MD表情符号"></a>MD表情符号</h2><h3 id="People"><a href="#People" class="headerlink" title="People"></a>People</h3><table>
+<thead>
+<tr>
+<th align="left">😊 <code>:blush:</code></th>
+<th align="left">😄 <code>:smile:</code></th>
+<th align="left">😆 <code>:laughing:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">😭 <code>:sob:</code></td>
+<td align="left">😃 <code>:smiley:</code></td>
+<td align="left">☺️ <code>:relaxed:</code></td>
+</tr>
+<tr>
+<td align="left">😏 <code>:smirk:</code></td>
+<td align="left">😍 <code>:heart_eyes:</code></td>
+<td align="left">😘 <code>:kissing_heart:</code></td>
+</tr>
+<tr>
+<td align="left">😚 <code>:kissing_closed_eyes:</code></td>
+<td align="left">😳 <code>:flushed:</code></td>
+<td align="left">😌 <code>:relieved:</code></td>
+</tr>
+<tr>
+<td align="left">😆 <code>:satisfied:</code></td>
+<td align="left">😁 <code>:grin:</code></td>
+<td align="left">😉 <code>:wink:</code></td>
+</tr>
+<tr>
+<td align="left">😜 <code>:stuck_out_tongue_winking_eye:</code></td>
+<td align="left">😝 <code>:stuck_out_tongue_closed_eyes:</code></td>
+<td align="left">😀 <code>:grinning:</code></td>
+</tr>
+<tr>
+<td align="left">😗 <code>:kissing:</code></td>
+<td align="left">😙 <code>:kissing_smiling_eyes:</code></td>
+<td align="left">😛 <code>:stuck_out_tongue:</code></td>
+</tr>
+<tr>
+<td align="left">😴 <code>:sleeping:</code></td>
+<td align="left">😟 <code>:worried:</code></td>
+<td align="left">😦 <code>:frowning:</code></td>
+</tr>
+<tr>
+<td align="left">😧 <code>:anguished:</code></td>
+<td align="left">😮 <code>:open_mouth:</code></td>
+<td align="left">😬 <code>:grimacing:</code></td>
+</tr>
+<tr>
+<td align="left">😕 <code>:confused:</code></td>
+<td align="left">😯 <code>:hushed:</code></td>
+<td align="left">😑 <code>:expressionless:</code></td>
+</tr>
+<tr>
+<td align="left">😒 <code>:unamused:</code></td>
+<td align="left">😅 <code>:sweat_smile:</code></td>
+<td align="left">😓 <code>:sweat:</code></td>
+</tr>
+<tr>
+<td align="left">😥 <code>:disappointed_relieved:</code></td>
+<td align="left">😩 <code>:weary:</code></td>
+<td align="left">😔 <code>:pensive:</code></td>
+</tr>
+<tr>
+<td align="left">😞 <code>:disappointed:</code></td>
+<td align="left">😖 <code>:confounded:</code></td>
+<td align="left">😨 <code>:fearful:</code></td>
+</tr>
+<tr>
+<td align="left">😰 <code>:cold_sweat:</code></td>
+<td align="left">😣 <code>:persevere:</code></td>
+<td align="left">😢 <code>:cry:</code></td>
+</tr>
+<tr>
+<td align="left">😇 <code>:innocent:</code></td>
+<td align="left">😂 <code>:joy:</code></td>
+<td align="left">😲 <code>:astonished:</code></td>
+</tr>
+<tr>
+<td align="left">😱 <code>:scream:</code></td>
+<td align="left">👥 <code>:busts_in_silhouette:</code></td>
+<td align="left">😫 <code>:tired_face:</code></td>
+</tr>
+<tr>
+<td align="left">😠 <code>:angry:</code></td>
+<td align="left">😡 <code>:rage:</code></td>
+<td align="left">😤 <code>:triumph:</code></td>
+</tr>
+<tr>
+<td align="left">😪 <code>:sleepy:</code></td>
+<td align="left">😋 <code>:yum:</code></td>
+<td align="left">😷 <code>:mask:</code></td>
+</tr>
+<tr>
+<td align="left">😎 <code>:sunglasses:</code></td>
+<td align="left">😵 <code>:dizzy_face:</code></td>
+<td align="left">👿 <code>:imp:</code></td>
+</tr>
+<tr>
+<td align="left">😈 <code>:smiling_imp:</code></td>
+<td align="left">😐 <code>:neutral_face:</code></td>
+<td align="left">😶 <code>:no_mouth:</code></td>
+</tr>
+<tr>
+<td align="left">👤 <code>:bust_in_silhouette:</code></td>
+<td align="left">👽 <code>:alien:</code></td>
+<td align="left">💛 <code>:yellow_heart:</code></td>
+</tr>
+<tr>
+<td align="left">💙 <code>:blue_heart:</code></td>
+<td align="left">💜 <code>:purple_heart:</code></td>
+<td align="left">❤️ <code>:heart:</code></td>
+</tr>
+<tr>
+<td align="left">💚 <code>:green_heart:</code></td>
+<td align="left">💔 <code>:broken_heart:</code></td>
+<td align="left">💓 <code>:heartbeat:</code></td>
+</tr>
+<tr>
+<td align="left">💗 <code>:heartpulse:</code></td>
+<td align="left">💕 <code>:two_hearts:</code></td>
+<td align="left">💞 <code>:revolving_hearts:</code></td>
+</tr>
+<tr>
+<td align="left">💘 <code>:cupid:</code></td>
+<td align="left">💖 <code>:sparkling_heart:</code></td>
+<td align="left">✨ <code>:sparkles:</code></td>
+</tr>
+<tr>
+<td align="left">⭐ <code>:star:</code></td>
+<td align="left">🌟 <code>:star2:</code></td>
+<td align="left">💫 <code>:dizzy:</code></td>
+</tr>
+<tr>
+<td align="left">💥 <code>:boom:</code></td>
+<td align="left">💥 <code>:collision:</code></td>
+<td align="left">💢 <code>:anger:</code></td>
+</tr>
+<tr>
+<td align="left">❗ <code>:exclamation:</code></td>
+<td align="left">❓ <code>:question:</code></td>
+<td align="left">❕ <code>:grey_exclamation:</code></td>
+</tr>
+<tr>
+<td align="left">❔ <code>:grey_question:</code></td>
+<td align="left">💤 <code>:zzz:</code></td>
+<td align="left">💨 <code>:dash:</code></td>
+</tr>
+<tr>
+<td align="left">💦 <code>:sweat_drops:</code></td>
+<td align="left">🎶 <code>:notes:</code></td>
+<td align="left">🎵 <code>:musical_note:</code></td>
+</tr>
+<tr>
+<td align="left">🔥 <code>:fire:</code></td>
+<td align="left">💩 <code>:hankey:</code></td>
+<td align="left">💩 <code>:poop:</code></td>
+</tr>
+<tr>
+<td align="left">💩 <code>:shit:</code></td>
+<td align="left">👍 <code>:+1:</code></td>
+<td align="left">👍 <code>:thumbsup:</code></td>
+</tr>
+<tr>
+<td align="left">👎 <code>:-1:</code></td>
+<td align="left">👎 <code>:thumbsdown:</code></td>
+<td align="left">👌 <code>:ok_hand:</code></td>
+</tr>
+<tr>
+<td align="left">👊 <code>:punch:</code></td>
+<td align="left">👊 <code>:facepunch:</code></td>
+<td align="left">✊ <code>:fist:</code></td>
+</tr>
+<tr>
+<td align="left">✌️ <code>:v:</code></td>
+<td align="left">👋 <code>:wave:</code></td>
+<td align="left">✋ <code>:hand:</code></td>
+</tr>
+<tr>
+<td align="left">✋ <code>:raised_hand:</code></td>
+<td align="left">👐 <code>:open_hands:</code></td>
+<td align="left">☝️ <code>:point_up:</code></td>
+</tr>
+<tr>
+<td align="left">👇 <code>:point_down:</code></td>
+<td align="left">👈 <code>:point_left:</code></td>
+<td align="left">👉 <code>:point_right:</code></td>
+</tr>
+<tr>
+<td align="left">🙌 <code>:raised_hands:</code></td>
+<td align="left">🙏 <code>:pray:</code></td>
+<td align="left">👆 <code>:point_up_2:</code></td>
+</tr>
+<tr>
+<td align="left">👏 <code>:clap:</code></td>
+<td align="left">💪 <code>:muscle:</code></td>
+<td align="left">🤘 <code>:metal:</code></td>
+</tr>
+<tr>
+<td align="left">🖕 <code>:fu:</code></td>
+<td align="left">🚶 <code>:walking:</code></td>
+<td align="left">🏃 <code>:runner:</code></td>
+</tr>
+<tr>
+<td align="left">🏃 <code>:running:</code></td>
+<td align="left">👫 <code>:couple:</code></td>
+<td align="left">👪 <code>:family:</code></td>
+</tr>
+<tr>
+<td align="left">👬 <code>:two_men_holding_hands:</code></td>
+<td align="left">👭 <code>:two_women_holding_hands:</code></td>
+<td align="left">💃 <code>:dancer:</code></td>
+</tr>
+<tr>
+<td align="left">👯 <code>:dancers:</code></td>
+<td align="left">🙆‍♀️ <code>:ok_woman:</code></td>
+<td align="left">🙅 <code>:no_good:</code></td>
+</tr>
+<tr>
+<td align="left">💁 <code>:information_desk_person:</code></td>
+<td align="left">🙋 <code>:raising_hand:</code></td>
+<td align="left">👰‍♀️ <code>:bride_with_veil:</code></td>
+</tr>
+<tr>
+<td align="left">💬 <code>:speech_balloon:</code></td>
+<td align="left">👥 <code>:busts_in_silhouette:</code></td>
+<td align="left">🙇 <code>:bow:</code></td>
+</tr>
+<tr>
+<td align="left">💏 <code>:couplekiss:</code></td>
+<td align="left">💑 <code>:couple_with_heart:</code></td>
+<td align="left">💆 <code>:massage:</code></td>
+</tr>
+<tr>
+<td align="left">💇 <code>:haircut:</code></td>
+<td align="left">💅 <code>:nail_care:</code></td>
+<td align="left">👦 <code>:boy:</code></td>
+</tr>
+<tr>
+<td align="left">👧 <code>:girl:</code></td>
+<td align="left">👩 <code>:woman:</code></td>
+<td align="left">👨 <code>:man:</code></td>
+</tr>
+<tr>
+<td align="left">👶 <code>:baby:</code></td>
+<td align="left">👵 <code>:older_woman:</code></td>
+<td align="left">👴 <code>:older_man:</code></td>
+</tr>
+<tr>
+<td align="left">💭 <code>:thought_balloon:</code></td>
+<td align="left">👲 <code>:man_with_gua_pi_mao:</code></td>
+<td align="left">👳‍♂️ <code>:man_with_turban:</code></td>
+</tr>
+<tr>
+<td align="left">👷 <code>:construction_worker:</code></td>
+<td align="left">👮 <code>:cop:</code></td>
+<td align="left">👼 <code>:angel:</code></td>
+</tr>
+<tr>
+<td align="left">👸 <code>:princess:</code></td>
+<td align="left">😺 <code>:smiley_cat:</code></td>
+<td align="left">😸 <code>:smile_cat:</code></td>
+</tr>
+<tr>
+<td align="left">😻 <code>:heart_eyes_cat:</code></td>
+<td align="left">😽 <code>:kissing_cat:</code></td>
+<td align="left">😼 <code>:smirk_cat:</code></td>
+</tr>
+<tr>
+<td align="left">🙀 <code>:scream_cat:</code></td>
+<td align="left">😿 <code>:crying_cat_face:</code></td>
+<td align="left">😹 <code>:joy_cat:</code></td>
+</tr>
+<tr>
+<td align="left">😾 <code>:pouting_cat:</code></td>
+<td align="left">👹 <code>:japanese_ogre:</code></td>
+<td align="left">👺 <code>:japanese_goblin:</code></td>
+</tr>
+<tr>
+<td align="left">🙈 <code>:see_no_evil:</code></td>
+<td align="left">🙉 <code>:hear_no_evil:</code></td>
+<td align="left">🙊 <code>:speak_no_evil:</code></td>
+</tr>
+<tr>
+<td align="left">💂‍♂️ <code>:guardsman:</code></td>
+<td align="left">💀 <code>:skull:</code></td>
+<td align="left">🐾 <code>:feet:</code></td>
+</tr>
+<tr>
+<td align="left">👄 <code>:lips:</code></td>
+<td align="left">💋 <code>:kiss:</code></td>
+<td align="left">💧 <code>:droplet:</code></td>
+</tr>
+<tr>
+<td align="left">👂 <code>:ear:</code></td>
+<td align="left">👀 <code>:eyes:</code></td>
+<td align="left">👃 <code>:nose:</code></td>
+</tr>
+<tr>
+<td align="left">👅 <code>:tongue:</code></td>
+<td align="left">💌 <code>:love_letter:</code></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="Nature"><a href="#Nature" class="headerlink" title="#Nature"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/mdemoji.html#nature">#</a>Nature</h3><table>
+<thead>
+<tr>
+<th align="left">☀️ <code>:sunny:</code></th>
+<th align="left">☔ <code>:umbrella:</code></th>
+<th align="left">☁️ <code>:cloud:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">❄️ <code>:snowflake:</code></td>
+<td align="left">⛄ <code>:snowman:</code></td>
+<td align="left">⚡ <code>:zap:</code></td>
+</tr>
+<tr>
+<td align="left">🌀 <code>:cyclone:</code></td>
+<td align="left">🌁 <code>:foggy:</code></td>
+<td align="left">🌊 <code>:ocean:</code></td>
+</tr>
+<tr>
+<td align="left">🐱 <code>:cat:</code></td>
+<td align="left">🐶 <code>:dog:</code></td>
+<td align="left">🐭 <code>:mouse:</code></td>
+</tr>
+<tr>
+<td align="left">🐹 <code>:hamster:</code></td>
+<td align="left">🐰 <code>:rabbit:</code></td>
+<td align="left">🐺 <code>:wolf:</code></td>
+</tr>
+<tr>
+<td align="left">🐸 <code>:frog:</code></td>
+<td align="left">🐯 <code>:tiger:</code></td>
+<td align="left">🐨 <code>:koala:</code></td>
+</tr>
+<tr>
+<td align="left">🐻 <code>:bear:</code></td>
+<td align="left">🐷 <code>:pig:</code></td>
+<td align="left">🐽 <code>:pig_nose:</code></td>
+</tr>
+<tr>
+<td align="left">🐮 <code>:cow:</code></td>
+<td align="left">🐗 <code>:boar:</code></td>
+<td align="left">🐵 <code>:monkey_face:</code></td>
+</tr>
+<tr>
+<td align="left">🐒 <code>:monkey:</code></td>
+<td align="left">🐴 <code>:horse:</code></td>
+<td align="left">🐎 <code>:racehorse:</code></td>
+</tr>
+<tr>
+<td align="left">🐫 <code>:camel:</code></td>
+<td align="left">🐑 <code>:sheep:</code></td>
+<td align="left">🐘 <code>:elephant:</code></td>
+</tr>
+<tr>
+<td align="left">🐼 <code>:panda_face:</code></td>
+<td align="left">🐍 <code>:snake:</code></td>
+<td align="left">🐦 <code>:bird:</code></td>
+</tr>
+<tr>
+<td align="left">🐤 <code>:baby_chick:</code></td>
+<td align="left">🐥 <code>:hatched_chick:</code></td>
+<td align="left">🐣 <code>:hatching_chick:</code></td>
+</tr>
+<tr>
+<td align="left">🐔 <code>:chicken:</code></td>
+<td align="left">🐧 <code>:penguin:</code></td>
+<td align="left">🐢 <code>:turtle:</code></td>
+</tr>
+<tr>
+<td align="left">🐛 <code>:bug:</code></td>
+<td align="left">🐝 <code>:honeybee:</code></td>
+<td align="left">🐜 <code>:ant:</code></td>
+</tr>
+<tr>
+<td align="left">🪲 <code>:beetle:</code></td>
+<td align="left">🐌 <code>:snail:</code></td>
+<td align="left">🐙 <code>:octopus:</code></td>
+</tr>
+<tr>
+<td align="left">🐠 <code>:tropical_fish:</code></td>
+<td align="left">🐟 <code>:fish:</code></td>
+<td align="left">🐳 <code>:whale:</code></td>
+</tr>
+<tr>
+<td align="left">🐋 <code>:whale2:</code></td>
+<td align="left">🐬 <code>:dolphin:</code></td>
+<td align="left">🐄 <code>:cow2:</code></td>
+</tr>
+<tr>
+<td align="left">🐏 <code>:ram:</code></td>
+<td align="left">🐀 <code>:rat:</code></td>
+<td align="left">🐃 <code>:water_buffalo:</code></td>
+</tr>
+<tr>
+<td align="left">🐅 <code>:tiger2:</code></td>
+<td align="left">🐇 <code>:rabbit2:</code></td>
+<td align="left">🐉 <code>:dragon:</code></td>
+</tr>
+<tr>
+<td align="left">🐐 <code>:goat:</code></td>
+<td align="left">🐓 <code>:rooster:</code></td>
+<td align="left">🐕 <code>:dog2:</code></td>
+</tr>
+<tr>
+<td align="left">🐖 <code>:pig2:</code></td>
+<td align="left">🐁 <code>:mouse2:</code></td>
+<td align="left">🐂 <code>:ox:</code></td>
+</tr>
+<tr>
+<td align="left">🐲 <code>:dragon_face:</code></td>
+<td align="left">🐡 <code>:blowfish:</code></td>
+<td align="left">🐊 <code>:crocodile:</code></td>
+</tr>
+<tr>
+<td align="left">🐪 <code>:dromedary_camel:</code></td>
+<td align="left">🐆 <code>:leopard:</code></td>
+<td align="left">🐈 <code>:cat2:</code></td>
+</tr>
+<tr>
+<td align="left">🐩 <code>:poodle:</code></td>
+<td align="left">🐾 <code>:paw_prints:</code></td>
+<td align="left">💐 <code>:bouquet:</code></td>
+</tr>
+<tr>
+<td align="left">🌸 <code>:cherry_blossom:</code></td>
+<td align="left">🌷 <code>:tulip:</code></td>
+<td align="left">🍀 <code>:four_leaf_clover:</code></td>
+</tr>
+<tr>
+<td align="left">🌹 <code>:rose:</code></td>
+<td align="left">🌻 <code>:sunflower:</code></td>
+<td align="left">🌺 <code>:hibiscus:</code></td>
+</tr>
+<tr>
+<td align="left">🍁 <code>:maple_leaf:</code></td>
+<td align="left">🍃 <code>:leaves:</code></td>
+<td align="left">🍂 <code>:fallen_leaf:</code></td>
+</tr>
+<tr>
+<td align="left">🌿 <code>:herb:</code></td>
+<td align="left">🍄 <code>:mushroom:</code></td>
+<td align="left">🌵 <code>:cactus:</code></td>
+</tr>
+<tr>
+<td align="left">🌴 <code>:palm_tree:</code></td>
+<td align="left">🌲 <code>:evergreen_tree:</code></td>
+<td align="left">🌳 <code>:deciduous_tree:</code></td>
+</tr>
+<tr>
+<td align="left">🌰 <code>:chestnut:</code></td>
+<td align="left">🌱 <code>:seedling:</code></td>
+<td align="left">🌼 <code>:blossom:</code></td>
+</tr>
+<tr>
+<td align="left">🌾 <code>:ear_of_rice:</code></td>
+<td align="left">🐚 <code>:shell:</code></td>
+<td align="left">🌐 <code>:globe_with_meridians:</code></td>
+</tr>
+<tr>
+<td align="left">🌞 <code>:sun_with_face:</code></td>
+<td align="left">🌝 <code>:full_moon_with_face:</code></td>
+<td align="left">🌚 <code>:new_moon_with_face:</code></td>
+</tr>
+<tr>
+<td align="left">🌑 <code>:new_moon:</code></td>
+<td align="left">🌒 <code>:waxing_crescent_moon:</code></td>
+<td align="left">🌓 <code>:first_quarter_moon:</code></td>
+</tr>
+<tr>
+<td align="left">🌔 <code>:waxing_gibbous_moon:</code></td>
+<td align="left">🌕 <code>:full_moon:</code></td>
+<td align="left">🌖 <code>:waning_gibbous_moon:</code></td>
+</tr>
+<tr>
+<td align="left">🌗 <code>:last_quarter_moon:</code></td>
+<td align="left">🌘 <code>:waning_crescent_moon:</code></td>
+<td align="left">🌜 <code>:last_quarter_moon_with_face:</code></td>
+</tr>
+<tr>
+<td align="left">🌛 <code>:first_quarter_moon_with_face:</code></td>
+<td align="left">🌔 <code>:moon:</code></td>
+<td align="left">🌍 <code>:earth_africa:</code></td>
+</tr>
+<tr>
+<td align="left">🌎 <code>:earth_americas:</code></td>
+<td align="left">🌏 <code>:earth_asia:</code></td>
+<td align="left">🌋 <code>:volcano:</code></td>
+</tr>
+<tr>
+<td align="left">🌌 <code>:milky_way:</code></td>
+<td align="left">⛅ <code>:partly_sunny:</code></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="Objects"><a href="#Objects" class="headerlink" title="#Objects"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/mdemoji.html#objects">#</a>Objects</h3><table>
+<thead>
+<tr>
+<th align="left">🎍 <code>:bamboo:</code></th>
+<th align="left">💝 <code>:gift_heart:</code></th>
+<th align="left">🎎 <code>:dolls:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">🎒 <code>:school_satchel:</code></td>
+<td align="left">🎓 <code>:mortar_board:</code></td>
+<td align="left">🎏 <code>:flags:</code></td>
+</tr>
+<tr>
+<td align="left">🎆 <code>:fireworks:</code></td>
+<td align="left">🎇 <code>:sparkler:</code></td>
+<td align="left">🎐 <code>:wind_chime:</code></td>
+</tr>
+<tr>
+<td align="left">🎑 <code>:rice_scene:</code></td>
+<td align="left">🎃 <code>:jack_o_lantern:</code></td>
+<td align="left">👻 <code>:ghost:</code></td>
+</tr>
+<tr>
+<td align="left">🎅 <code>:santa:</code></td>
+<td align="left">🎄 <code>:christmas_tree:</code></td>
+<td align="left">🎁 <code>:gift:</code></td>
+</tr>
+<tr>
+<td align="left">🔔 <code>:bell:</code></td>
+<td align="left">🔕 <code>:no_bell:</code></td>
+<td align="left">🎋 <code>:tanabata_tree:</code></td>
+</tr>
+<tr>
+<td align="left">🎉 <code>:tada:</code></td>
+<td align="left">🎊 <code>:confetti_ball:</code></td>
+<td align="left">🎈 <code>:balloon:</code></td>
+</tr>
+<tr>
+<td align="left">🔮 <code>:crystal_ball:</code></td>
+<td align="left">💿 <code>:cd:</code></td>
+<td align="left">📀 <code>:dvd:</code></td>
+</tr>
+<tr>
+<td align="left">💾 <code>:floppy_disk:</code></td>
+<td align="left">📷 <code>:camera:</code></td>
+<td align="left">📹 <code>:video_camera:</code></td>
+</tr>
+<tr>
+<td align="left">🎥 <code>:movie_camera:</code></td>
+<td align="left">💻 <code>:computer:</code></td>
+<td align="left">📺 <code>:tv:</code></td>
+</tr>
+<tr>
+<td align="left">📱 <code>:iphone:</code></td>
+<td align="left">☎️ <code>:phone:</code></td>
+<td align="left">☎️ <code>:telephone:</code></td>
+</tr>
+<tr>
+<td align="left">📞 <code>:telephone_receiver:</code></td>
+<td align="left">📟 <code>:pager:</code></td>
+<td align="left">📠 <code>:fax:</code></td>
+</tr>
+<tr>
+<td align="left">💽 <code>:minidisc:</code></td>
+<td align="left">📼 <code>:vhs:</code></td>
+<td align="left">🔉 <code>:sound:</code></td>
+</tr>
+<tr>
+<td align="left">🔈 <code>:speaker:</code></td>
+<td align="left">🔇 <code>:mute:</code></td>
+<td align="left">📢 <code>:loudspeaker:</code></td>
+</tr>
+<tr>
+<td align="left">📣 <code>:mega:</code></td>
+<td align="left">⌛ <code>:hourglass:</code></td>
+<td align="left">⏳ <code>:hourglass_flowing_sand:</code></td>
+</tr>
+<tr>
+<td align="left">⏰ <code>:alarm_clock:</code></td>
+<td align="left">⌚ <code>:watch:</code></td>
+<td align="left">📻 <code>:radio:</code></td>
+</tr>
+<tr>
+<td align="left">📡 <code>:satellite:</code></td>
+<td align="left">➿ <code>:loop:</code></td>
+<td align="left">🔍 <code>:mag:</code></td>
+</tr>
+<tr>
+<td align="left">🔎 <code>:mag_right:</code></td>
+<td align="left">🔓 <code>:unlock:</code></td>
+<td align="left">🔒 <code>:lock:</code></td>
+</tr>
+<tr>
+<td align="left">🔏 <code>:lock_with_ink_pen:</code></td>
+<td align="left">🔐 <code>:closed_lock_with_key:</code></td>
+<td align="left">🔑 <code>:key:</code></td>
+</tr>
+<tr>
+<td align="left">💡 <code>:bulb:</code></td>
+<td align="left">🔦 <code>:flashlight:</code></td>
+<td align="left">🔆 <code>:high_brightness:</code></td>
+</tr>
+<tr>
+<td align="left">🔅 <code>:low_brightness:</code></td>
+<td align="left">🔌 <code>:electric_plug:</code></td>
+<td align="left">🔋 <code>:battery:</code></td>
+</tr>
+<tr>
+<td align="left">📲 <code>:calling:</code></td>
+<td align="left">📧 <code>:email:</code></td>
+<td align="left">📫 <code>:mailbox:</code></td>
+</tr>
+<tr>
+<td align="left">📮 <code>:postbox:</code></td>
+<td align="left">🛀 <code>:bath:</code></td>
+<td align="left">🛁 <code>:bathtub:</code></td>
+</tr>
+<tr>
+<td align="left">🚿 <code>:shower:</code></td>
+<td align="left">🚽 <code>:toilet:</code></td>
+<td align="left">🔧 <code>:wrench:</code></td>
+</tr>
+<tr>
+<td align="left">🔩 <code>:nut_and_bolt:</code></td>
+<td align="left">🔨 <code>:hammer:</code></td>
+<td align="left">💺 <code>:seat:</code></td>
+</tr>
+<tr>
+<td align="left">💰 <code>:moneybag:</code></td>
+<td align="left">💴 <code>:yen:</code></td>
+<td align="left">💵 <code>:dollar:</code></td>
+</tr>
+<tr>
+<td align="left">💷 <code>:pound:</code></td>
+<td align="left">💶 <code>:euro:</code></td>
+<td align="left">💳 <code>:credit_card:</code></td>
+</tr>
+<tr>
+<td align="left">💸 <code>:money_with_wings:</code></td>
+<td align="left">📧 <code>:e-mail:</code></td>
+<td align="left">📥 <code>:inbox_tray:</code></td>
+</tr>
+<tr>
+<td align="left">📤 <code>:outbox_tray:</code></td>
+<td align="left">✉️ <code>:envelope:</code></td>
+<td align="left">📨 <code>:incoming_envelope:</code></td>
+</tr>
+<tr>
+<td align="left">📯 <code>:postal_horn:</code></td>
+<td align="left">📪 <code>:mailbox_closed:</code></td>
+<td align="left">📬 <code>:mailbox_with_mail:</code></td>
+</tr>
+<tr>
+<td align="left">📭 <code>:mailbox_with_no_mail:</code></td>
+<td align="left">🚪 <code>:door:</code></td>
+<td align="left">🚬 <code>:smoking:</code></td>
+</tr>
+<tr>
+<td align="left">💣 <code>:bomb:</code></td>
+<td align="left">🔫 <code>:gun:</code></td>
+<td align="left">🔪 <code>:hocho:</code></td>
+</tr>
+<tr>
+<td align="left">💊 <code>:pill:</code></td>
+<td align="left">💉 <code>:syringe:</code></td>
+<td align="left">📄 <code>:page_facing_up:</code></td>
+</tr>
+<tr>
+<td align="left">📃 <code>:page_with_curl:</code></td>
+<td align="left">📑 <code>:bookmark_tabs:</code></td>
+<td align="left">📊 <code>:bar_chart:</code></td>
+</tr>
+<tr>
+<td align="left">📈 <code>:chart_with_upwards_trend:</code></td>
+<td align="left">📉 <code>:chart_with_downwards_trend:</code></td>
+<td align="left">📜 <code>:scroll:</code></td>
+</tr>
+<tr>
+<td align="left">📋 <code>:clipboard:</code></td>
+<td align="left">📆 <code>:calendar:</code></td>
+<td align="left">📅 <code>:date:</code></td>
+</tr>
+<tr>
+<td align="left">📇 <code>:card_index:</code></td>
+<td align="left">📁 <code>:file_folder:</code></td>
+<td align="left">📂 <code>:open_file_folder:</code></td>
+</tr>
+<tr>
+<td align="left">✂️ <code>:scissors:</code></td>
+<td align="left">📌 <code>:pushpin:</code></td>
+<td align="left">📎 <code>:paperclip:</code></td>
+</tr>
+<tr>
+<td align="left">✒️ <code>:black_nib:</code></td>
+<td align="left">✏️ <code>:pencil2:</code></td>
+<td align="left">📏 <code>:straight_ruler:</code></td>
+</tr>
+<tr>
+<td align="left">📐 <code>:triangular_ruler:</code></td>
+<td align="left">📕 <code>:closed_book:</code></td>
+<td align="left">📗 <code>:green_book:</code></td>
+</tr>
+<tr>
+<td align="left">📘 <code>:blue_book:</code></td>
+<td align="left">📙 <code>:orange_book:</code></td>
+<td align="left">📓 <code>:notebook:</code></td>
+</tr>
+<tr>
+<td align="left">📔 <code>:notebook_with_decorative_cover:</code></td>
+<td align="left">📒 <code>:ledger:</code></td>
+<td align="left">📚 <code>:books:</code></td>
+</tr>
+<tr>
+<td align="left">🔖 <code>:bookmark:</code></td>
+<td align="left">📛 <code>:name_badge:</code></td>
+<td align="left">🔬 <code>:microscope:</code></td>
+</tr>
+<tr>
+<td align="left">🔭 <code>:telescope:</code></td>
+<td align="left">📰 <code>:newspaper:</code></td>
+<td align="left">🏈 <code>:football:</code></td>
+</tr>
+<tr>
+<td align="left">🏀 <code>:basketball:</code></td>
+<td align="left">⚽ <code>:soccer:</code></td>
+<td align="left">⚾ <code>:baseball:</code></td>
+</tr>
+<tr>
+<td align="left">🎾 <code>:tennis:</code></td>
+<td align="left">🎱 <code>:8ball:</code></td>
+<td align="left">🏉 <code>:rugby_football:</code></td>
+</tr>
+<tr>
+<td align="left">🎳 <code>:bowling:</code></td>
+<td align="left">⛳ <code>:golf:</code></td>
+<td align="left">🚵 <code>:mountain_bicyclist:</code></td>
+</tr>
+<tr>
+<td align="left">🚴 <code>:bicyclist:</code></td>
+<td align="left">🏇 <code>:horse_racing:</code></td>
+<td align="left">🏂 <code>:snowboarder:</code></td>
+</tr>
+<tr>
+<td align="left">🏊 <code>:swimmer:</code></td>
+<td align="left">🏄 <code>:surfer:</code></td>
+<td align="left">🎿 <code>:ski:</code></td>
+</tr>
+<tr>
+<td align="left">♠️ <code>:spades:</code></td>
+<td align="left">♥️ <code>:hearts:</code></td>
+<td align="left">♣️ <code>:clubs:</code></td>
+</tr>
+<tr>
+<td align="left">♦️ <code>:diamonds:</code></td>
+<td align="left">💎 <code>:gem:</code></td>
+<td align="left">💍 <code>:ring:</code></td>
+</tr>
+<tr>
+<td align="left">🏆 <code>:trophy:</code></td>
+<td align="left">🎼 <code>:musical_score:</code></td>
+<td align="left">🎹 <code>:musical_keyboard:</code></td>
+</tr>
+<tr>
+<td align="left">🎻 <code>:violin:</code></td>
+<td align="left">👾 <code>:space_invader:</code></td>
+<td align="left">🎮 <code>:video_game:</code></td>
+</tr>
+<tr>
+<td align="left">🃏 <code>:black_joker:</code></td>
+<td align="left">🎴 <code>:flower_playing_cards:</code></td>
+<td align="left">🎲 <code>:game_die:</code></td>
+</tr>
+<tr>
+<td align="left">🎯 <code>:dart:</code></td>
+<td align="left">🀄 <code>:mahjong:</code></td>
+<td align="left">🎬 <code>:clapper:</code></td>
+</tr>
+<tr>
+<td align="left">📝 <code>:memo:</code></td>
+<td align="left">📝 <code>:pencil:</code></td>
+<td align="left">📖 <code>:book:</code></td>
+</tr>
+<tr>
+<td align="left">🎨 <code>:art:</code></td>
+<td align="left">🎤 <code>:microphone:</code></td>
+<td align="left">🎧 <code>:headphones:</code></td>
+</tr>
+<tr>
+<td align="left">🎺 <code>:trumpet:</code></td>
+<td align="left">🎷 <code>:saxophone:</code></td>
+<td align="left">🎸 <code>:guitar:</code></td>
+</tr>
+<tr>
+<td align="left">👞 <code>:shoe:</code></td>
+<td align="left">👡 <code>:sandal:</code></td>
+<td align="left">👠 <code>:high_heel:</code></td>
+</tr>
+<tr>
+<td align="left">💄 <code>:lipstick:</code></td>
+<td align="left">👢 <code>:boot:</code></td>
+<td align="left">👕 <code>:shirt:</code></td>
+</tr>
+<tr>
+<td align="left">👕 <code>:tshirt:</code></td>
+<td align="left">👔 <code>:necktie:</code></td>
+<td align="left">👚 <code>:womans_clothes:</code></td>
+</tr>
+<tr>
+<td align="left">👗 <code>:dress:</code></td>
+<td align="left">🎽 <code>:running_shirt_with_sash:</code></td>
+<td align="left">👖 <code>:jeans:</code></td>
+</tr>
+<tr>
+<td align="left">👘 <code>:kimono:</code></td>
+<td align="left">👙 <code>:bikini:</code></td>
+<td align="left">🎀 <code>:ribbon:</code></td>
+</tr>
+<tr>
+<td align="left">🎩 <code>:tophat:</code></td>
+<td align="left">👑 <code>:crown:</code></td>
+<td align="left">👒 <code>:womans_hat:</code></td>
+</tr>
+<tr>
+<td align="left">👞 <code>:mans_shoe:</code></td>
+<td align="left">🌂 <code>:closed_umbrella:</code></td>
+<td align="left">💼 <code>:briefcase:</code></td>
+</tr>
+<tr>
+<td align="left">👜 <code>:handbag:</code></td>
+<td align="left">👝 <code>:pouch:</code></td>
+<td align="left">👛 <code>:purse:</code></td>
+</tr>
+<tr>
+<td align="left">👓 <code>:eyeglasses:</code></td>
+<td align="left">🎣 <code>:fishing_pole_and_fish:</code></td>
+<td align="left">☕ <code>:coffee:</code></td>
+</tr>
+<tr>
+<td align="left">🍵 <code>:tea:</code></td>
+<td align="left">🍶 <code>:sake:</code></td>
+<td align="left">🍼 <code>:baby_bottle:</code></td>
+</tr>
+<tr>
+<td align="left">🍺 <code>:beer:</code></td>
+<td align="left">🍻 <code>:beers:</code></td>
+<td align="left">🍸 <code>:cocktail:</code></td>
+</tr>
+<tr>
+<td align="left">🍹 <code>:tropical_drink:</code></td>
+<td align="left">🍷 <code>:wine_glass:</code></td>
+<td align="left">🍴 <code>:fork_and_knife:</code></td>
+</tr>
+<tr>
+<td align="left">🍕 <code>:pizza:</code></td>
+<td align="left">🍔 <code>:hamburger:</code></td>
+<td align="left">🍟 <code>:fries:</code></td>
+</tr>
+<tr>
+<td align="left">🍗 <code>:poultry_leg:</code></td>
+<td align="left">🍖 <code>:meat_on_bone:</code></td>
+<td align="left">🍝 <code>:spaghetti:</code></td>
+</tr>
+<tr>
+<td align="left">🍛 <code>:curry:</code></td>
+<td align="left">🍤 <code>:fried_shrimp:</code></td>
+<td align="left">🍱 <code>:bento:</code></td>
+</tr>
+<tr>
+<td align="left">🍣 <code>:sushi:</code></td>
+<td align="left">🍥 <code>:fish_cake:</code></td>
+<td align="left">🍙 <code>:rice_ball:</code></td>
+</tr>
+<tr>
+<td align="left">🍘 <code>:rice_cracker:</code></td>
+<td align="left">🍚 <code>:rice:</code></td>
+<td align="left">🍜 <code>:ramen:</code></td>
+</tr>
+<tr>
+<td align="left">🍲 <code>:stew:</code></td>
+<td align="left">🍢 <code>:oden:</code></td>
+<td align="left">🍡 <code>:dango:</code></td>
+</tr>
+<tr>
+<td align="left">🥚 <code>:egg:</code></td>
+<td align="left">🍞 <code>:bread:</code></td>
+<td align="left">🍩 <code>:doughnut:</code></td>
+</tr>
+<tr>
+<td align="left">🍮 <code>:custard:</code></td>
+<td align="left">🍦 <code>:icecream:</code></td>
+<td align="left">🍨 <code>:ice_cream:</code></td>
+</tr>
+<tr>
+<td align="left">🍧 <code>:shaved_ice:</code></td>
+<td align="left">🎂 <code>:birthday:</code></td>
+<td align="left">🍰 <code>:cake:</code></td>
+</tr>
+<tr>
+<td align="left">🍪 <code>:cookie:</code></td>
+<td align="left">🍫 <code>:chocolate_bar:</code></td>
+<td align="left">🍬 <code>:candy:</code></td>
+</tr>
+<tr>
+<td align="left">🍭 <code>:lollipop:</code></td>
+<td align="left">🍯 <code>:honey_pot:</code></td>
+<td align="left">🍎 <code>:apple:</code></td>
+</tr>
+<tr>
+<td align="left">🍏 <code>:green_apple:</code></td>
+<td align="left">🍊 <code>:tangerine:</code></td>
+<td align="left">🍋 <code>:lemon:</code></td>
+</tr>
+<tr>
+<td align="left">🍒 <code>:cherries:</code></td>
+<td align="left">🍇 <code>:grapes:</code></td>
+<td align="left">🍉 <code>:watermelon:</code></td>
+</tr>
+<tr>
+<td align="left">🍓 <code>:strawberry:</code></td>
+<td align="left">🍑 <code>:peach:</code></td>
+<td align="left">🍈 <code>:melon:</code></td>
+</tr>
+<tr>
+<td align="left">🍌 <code>:banana:</code></td>
+<td align="left">🍐 <code>:pear:</code></td>
+<td align="left">🍍 <code>:pineapple:</code></td>
+</tr>
+<tr>
+<td align="left">🍠 <code>:sweet_potato:</code></td>
+<td align="left">🍆 <code>:eggplant:</code></td>
+<td align="left">🍅 <code>:tomato:</code></td>
+</tr>
+<tr>
+<td align="left">🌽 <code>:corn:</code></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="Places"><a href="#Places" class="headerlink" title="#Places"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/mdemoji.html#places">#</a>Places</h3><table>
+<thead>
+<tr>
+<th align="left">🏠 <code>:house:</code></th>
+<th align="left">🏡 <code>:house_with_garden:</code></th>
+<th align="left">🏫 <code>:school:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">🏢 <code>:office:</code></td>
+<td align="left">🏣 <code>:post_office:</code></td>
+<td align="left">🏥 <code>:hospital:</code></td>
+</tr>
+<tr>
+<td align="left">🏦 <code>:bank:</code></td>
+<td align="left">🏪 <code>:convenience_store:</code></td>
+<td align="left">🏩 <code>:love_hotel:</code></td>
+</tr>
+<tr>
+<td align="left">🏨 <code>:hotel:</code></td>
+<td align="left">💒 <code>:wedding:</code></td>
+<td align="left">⛪ <code>:church:</code></td>
+</tr>
+<tr>
+<td align="left">🏬 <code>:department_store:</code></td>
+<td align="left">🏤 <code>:european_post_office:</code></td>
+<td align="left">🌇 <code>:city_sunrise:</code></td>
+</tr>
+<tr>
+<td align="left">🌆 <code>:city_sunset:</code></td>
+<td align="left">🏯 <code>:japanese_castle:</code></td>
+<td align="left">🏰 <code>:european_castle:</code></td>
+</tr>
+<tr>
+<td align="left">⛺ <code>:tent:</code></td>
+<td align="left">🏭 <code>:factory:</code></td>
+<td align="left">🗼 <code>:tokyo_tower:</code></td>
+</tr>
+<tr>
+<td align="left">🗾 <code>:japan:</code></td>
+<td align="left">🗻 <code>:mount_fuji:</code></td>
+<td align="left">🌄 <code>:sunrise_over_mountains:</code></td>
+</tr>
+<tr>
+<td align="left">🌅 <code>:sunrise:</code></td>
+<td align="left">🌠 <code>:stars:</code></td>
+<td align="left">🗽 <code>:statue_of_liberty:</code></td>
+</tr>
+<tr>
+<td align="left">🌉 <code>:bridge_at_night:</code></td>
+<td align="left">🎠 <code>:carousel_horse:</code></td>
+<td align="left">🌈 <code>:rainbow:</code></td>
+</tr>
+<tr>
+<td align="left">🎡 <code>:ferris_wheel:</code></td>
+<td align="left">⛲ <code>:fountain:</code></td>
+<td align="left">🎢 <code>:roller_coaster:</code></td>
+</tr>
+<tr>
+<td align="left">🚢 <code>:ship:</code></td>
+<td align="left">🚤 <code>:speedboat:</code></td>
+<td align="left">⛵ <code>:boat:</code></td>
+</tr>
+<tr>
+<td align="left">⛵ <code>:sailboat:</code></td>
+<td align="left">🚣 <code>:rowboat:</code></td>
+<td align="left">⚓ <code>:anchor:</code></td>
+</tr>
+<tr>
+<td align="left">🚀 <code>:rocket:</code></td>
+<td align="left">✈️ <code>:airplane:</code></td>
+<td align="left">🚁 <code>:helicopter:</code></td>
+</tr>
+<tr>
+<td align="left">🚂 <code>:steam_locomotive:</code></td>
+<td align="left">🚊 <code>:tram:</code></td>
+<td align="left">🚞 <code>:mountain_railway:</code></td>
+</tr>
+<tr>
+<td align="left">🚲 <code>:bike:</code></td>
+<td align="left">🚡 <code>:aerial_tramway:</code></td>
+<td align="left">🚟 <code>:suspension_railway:</code></td>
+</tr>
+<tr>
+<td align="left">🚠 <code>:mountain_cableway:</code></td>
+<td align="left">🚜 <code>:tractor:</code></td>
+<td align="left">🚙 <code>:blue_car:</code></td>
+</tr>
+<tr>
+<td align="left">🚘 <code>:oncoming_automobile:</code></td>
+<td align="left">🚗 <code>:car:</code></td>
+<td align="left">🚗 <code>:red_car:</code></td>
+</tr>
+<tr>
+<td align="left">🚕 <code>:taxi:</code></td>
+<td align="left">🚖 <code>:oncoming_taxi:</code></td>
+<td align="left">🚛 <code>:articulated_lorry:</code></td>
+</tr>
+<tr>
+<td align="left">🚌 <code>:bus:</code></td>
+<td align="left">🚍 <code>:oncoming_bus:</code></td>
+<td align="left">🚨 <code>:rotating_light:</code></td>
+</tr>
+<tr>
+<td align="left">🚓 <code>:police_car:</code></td>
+<td align="left">🚔 <code>:oncoming_police_car:</code></td>
+<td align="left">🚒 <code>:fire_engine:</code></td>
+</tr>
+<tr>
+<td align="left">🚑 <code>:ambulance:</code></td>
+<td align="left">🚐 <code>:minibus:</code></td>
+<td align="left">🚚 <code>:truck:</code></td>
+</tr>
+<tr>
+<td align="left">🚋 <code>:train:</code></td>
+<td align="left">🚉 <code>:station:</code></td>
+<td align="left">🚆 <code>:train2:</code></td>
+</tr>
+<tr>
+<td align="left">🚅 <code>:bullettrain_front:</code></td>
+<td align="left">🚄 <code>:bullettrain_side:</code></td>
+<td align="left">🚈 <code>:light_rail:</code></td>
+</tr>
+<tr>
+<td align="left">🚝 <code>:monorail:</code></td>
+<td align="left">🚃 <code>:railway_car:</code></td>
+<td align="left">🚎 <code>:trolleybus:</code></td>
+</tr>
+<tr>
+<td align="left">🎫 <code>:ticket:</code></td>
+<td align="left">⛽ <code>:fuelpump:</code></td>
+<td align="left">🚦 <code>:vertical_traffic_light:</code></td>
+</tr>
+<tr>
+<td align="left">🚥 <code>:traffic_light:</code></td>
+<td align="left">⚠️ <code>:warning:</code></td>
+<td align="left">🚧 <code>:construction:</code></td>
+</tr>
+<tr>
+<td align="left">🔰 <code>:beginner:</code></td>
+<td align="left">🏧 <code>:atm:</code></td>
+<td align="left">🎰 <code>:slot_machine:</code></td>
+</tr>
+<tr>
+<td align="left">🚏 <code>:busstop:</code></td>
+<td align="left">💈 <code>:barber:</code></td>
+<td align="left">♨️ <code>:hotsprings:</code></td>
+</tr>
+<tr>
+<td align="left">🏁 <code>:checkered_flag:</code></td>
+<td align="left">🎌 <code>:crossed_flags:</code></td>
+<td align="left">🏮 <code>:izakaya_lantern:</code></td>
+</tr>
+<tr>
+<td align="left">🗿 <code>:moyai:</code></td>
+<td align="left">🎪 <code>:circus_tent:</code></td>
+<td align="left">🎭 <code>:performing_arts:</code></td>
+</tr>
+<tr>
+<td align="left">📍 <code>:round_pushpin:</code></td>
+<td align="left">🚩 <code>:triangular_flag_on_post:</code></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="Symbols"><a href="#Symbols" class="headerlink" title="#Symbols"></a><a target="_blank" rel="noopener" href="https://doc.fly2you.cn/zh-CN/study/markdown/mdemoji.html#symbols">#</a>Symbols</h3><table>
+<thead>
+<tr>
+<th align="left">1️⃣ <code>:one:</code></th>
+<th align="left">2️⃣ <code>:two:</code></th>
+<th align="left">3️⃣ <code>:three:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">4️⃣ <code>:four:</code></td>
+<td align="left">5️⃣ <code>:five:</code></td>
+<td align="left">6️⃣ <code>:six:</code></td>
+</tr>
+<tr>
+<td align="left">7️⃣ <code>:seven:</code></td>
+<td align="left">8️⃣ <code>:eight:</code></td>
+<td align="left">9️⃣ <code>:nine:</code></td>
+</tr>
+<tr>
+<td align="left">🔟 <code>:keycap_ten:</code></td>
+<td align="left">🔢 <code>:1234:</code></td>
+<td align="left">0️⃣ <code>:zero:</code></td>
+</tr>
+<tr>
+<td align="left">#️⃣ <code>:hash:</code></td>
+<td align="left">🔣 <code>:symbols:</code></td>
+<td align="left">◀️ <code>:arrow_backward:</code></td>
+</tr>
+<tr>
+<td align="left">⬇️ <code>:arrow_down:</code></td>
+<td align="left">▶️ <code>:arrow_forward:</code></td>
+<td align="left">⬅️ <code>:arrow_left:</code></td>
+</tr>
+<tr>
+<td align="left">🔠 <code>:capital_abcd:</code></td>
+<td align="left">🔡 <code>:abcd:</code></td>
+<td align="left">🔤 <code>:abc:</code></td>
+</tr>
+<tr>
+<td align="left">↙️ <code>:arrow_lower_left:</code></td>
+<td align="left">↘️ <code>:arrow_lower_right:</code></td>
+<td align="left">➡️ <code>:arrow_right:</code></td>
+</tr>
+<tr>
+<td align="left">⬆️ <code>:arrow_up:</code></td>
+<td align="left">↖️ <code>:arrow_upper_left:</code></td>
+<td align="left">↗️ <code>:arrow_upper_right:</code></td>
+</tr>
+<tr>
+<td align="left">⏬ <code>:arrow_double_down:</code></td>
+<td align="left">⏫ <code>:arrow_double_up:</code></td>
+<td align="left">🔽 <code>:arrow_down_small:</code></td>
+</tr>
+<tr>
+<td align="left">⤵️ <code>:arrow_heading_down:</code></td>
+<td align="left">⤴️ <code>:arrow_heading_up:</code></td>
+<td align="left">↩️ <code>:leftwards_arrow_with_hook:</code></td>
+</tr>
+<tr>
+<td align="left">↪️ <code>:arrow_right_hook:</code></td>
+<td align="left">↔️ <code>:left_right_arrow:</code></td>
+<td align="left">↕️ <code>:arrow_up_down:</code></td>
+</tr>
+<tr>
+<td align="left">🔼 <code>:arrow_up_small:</code></td>
+<td align="left">🔃 <code>:arrows_clockwise:</code></td>
+<td align="left">🔄 <code>:arrows_counterclockwise:</code></td>
+</tr>
+<tr>
+<td align="left">⏪ <code>:rewind:</code></td>
+<td align="left">⏩ <code>:fast_forward:</code></td>
+<td align="left">ℹ️ <code>:information_source:</code></td>
+</tr>
+<tr>
+<td align="left">🆗 <code>:ok:</code></td>
+<td align="left">🔀 <code>:twisted_rightwards_arrows:</code></td>
+<td align="left">🔁 <code>:repeat:</code></td>
+</tr>
+<tr>
+<td align="left">🔂 <code>:repeat_one:</code></td>
+<td align="left">🆕 <code>:new:</code></td>
+<td align="left">🔝 <code>:top:</code></td>
+</tr>
+<tr>
+<td align="left">🆙 <code>:up:</code></td>
+<td align="left">🆒 <code>:cool:</code></td>
+<td align="left">🆓 <code>:free:</code></td>
+</tr>
+<tr>
+<td align="left">🆖 <code>:ng:</code></td>
+<td align="left">🎦 <code>:cinema:</code></td>
+<td align="left">🈁 <code>:koko:</code></td>
+</tr>
+<tr>
+<td align="left">📶 <code>:signal_strength:</code></td>
+<td align="left">🈵 <code>:u6e80:</code></td>
+<td align="left">🔱 <code>:trident:</code></td>
+</tr>
+<tr>
+<td align="left">🈂️ <code>:sa:</code></td>
+<td align="left">🚻 <code>:restroom:</code></td>
+<td align="left">🚹 <code>:mens:</code></td>
+</tr>
+<tr>
+<td align="left">🚺 <code>:womens:</code></td>
+<td align="left">🚼 <code>:baby_symbol:</code></td>
+<td align="left">🚭 <code>:no_smoking:</code></td>
+</tr>
+<tr>
+<td align="left">🅿️ <code>:parking:</code></td>
+<td align="left">♿ <code>:wheelchair:</code></td>
+<td align="left">🚇 <code>:metro:</code></td>
+</tr>
+<tr>
+<td align="left">🛄 <code>:baggage_claim:</code></td>
+<td align="left">🉑 <code>:accept:</code></td>
+<td align="left">🚾 <code>:wc:</code></td>
+</tr>
+<tr>
+<td align="left">🚰 <code>:potable_water:</code></td>
+<td align="left">🚮 <code>:put_litter_in_its_place:</code></td>
+<td align="left">㊙️ <code>:secret:</code></td>
+</tr>
+<tr>
+<td align="left">㊗️ <code>:congratulations:</code></td>
+<td align="left">Ⓜ️ <code>:m:</code></td>
+<td align="left">🛂 <code>:passport_control:</code></td>
+</tr>
+<tr>
+<td align="left">🛅 <code>:left_luggage:</code></td>
+<td align="left">🛃 <code>:customs:</code></td>
+<td align="left">🉐 <code>:ideograph_advantage:</code></td>
+</tr>
+<tr>
+<td align="left">🆑 <code>:cl:</code></td>
+<td align="left">🆘 <code>:sos:</code></td>
+<td align="left">🆔 <code>:id:</code></td>
+</tr>
+<tr>
+<td align="left">🚫 <code>:no_entry_sign:</code></td>
+<td align="left">🔞 <code>:underage:</code></td>
+<td align="left">📵 <code>:no_mobile_phones:</code></td>
+</tr>
+<tr>
+<td align="left">🚯 <code>:do_not_litter:</code></td>
+<td align="left">🚱 <code>:non-potable_water:</code></td>
+<td align="left">🚳 <code>:no_bicycles:</code></td>
+</tr>
+<tr>
+<td align="left">🚷 <code>:no_pedestrians:</code></td>
+<td align="left">🚸 <code>:children_crossing:</code></td>
+<td align="left">⛔ <code>:no_entry:</code></td>
+</tr>
+<tr>
+<td align="left">✳️ <code>:eight_spoked_asterisk:</code></td>
+<td align="left">✴️ <code>:eight_pointed_black_star:</code></td>
+<td align="left">💟 <code>:heart_decoration:</code></td>
+</tr>
+<tr>
+<td align="left">🆚 <code>:vs:</code></td>
+<td align="left">📳 <code>:vibration_mode:</code></td>
+<td align="left">📴 <code>:mobile_phone_off:</code></td>
+</tr>
+<tr>
+<td align="left">💹 <code>:chart:</code></td>
+<td align="left">💱 <code>:currency_exchange:</code></td>
+<td align="left">♈ <code>:aries:</code></td>
+</tr>
+<tr>
+<td align="left">♉ <code>:taurus:</code></td>
+<td align="left">♊ <code>:gemini:</code></td>
+<td align="left">♋ <code>:cancer:</code></td>
+</tr>
+<tr>
+<td align="left">♌ <code>:leo:</code></td>
+<td align="left">♍ <code>:virgo:</code></td>
+<td align="left">♎ <code>:libra:</code></td>
+</tr>
+<tr>
+<td align="left">♏ <code>:scorpius:</code></td>
+<td align="left">♐ <code>:sagittarius:</code></td>
+<td align="left">♑ <code>:capricorn:</code></td>
+</tr>
+<tr>
+<td align="left">♒ <code>:aquarius:</code></td>
+<td align="left">♓ <code>:pisces:</code></td>
+<td align="left">⛎ <code>:ophiuchus:</code></td>
+</tr>
+<tr>
+<td align="left">🔯 <code>:six_pointed_star:</code></td>
+<td align="left">❎ <code>:negative_squared_cross_mark:</code></td>
+<td align="left">🅰️ <code>:a:</code></td>
+</tr>
+<tr>
+<td align="left">🅱️ <code>:b:</code></td>
+<td align="left">🆎 <code>:ab:</code></td>
+<td align="left">🅾️ <code>:o2:</code></td>
+</tr>
+<tr>
+<td align="left">💠 <code>:diamond_shape_with_a_dot_inside:</code></td>
+<td align="left">♻️ <code>:recycle:</code></td>
+<td align="left">🔚 <code>:end:</code></td>
+</tr>
+<tr>
+<td align="left">🔛 <code>:on:</code></td>
+<td align="left">🔜 <code>:soon:</code></td>
+<td align="left">🕐 <code>:clock1:</code></td>
+</tr>
+<tr>
+<td align="left">🕜 <code>:clock130:</code></td>
+<td align="left">🕙 <code>:clock10:</code></td>
+<td align="left">🕥 <code>:clock1030:</code></td>
+</tr>
+<tr>
+<td align="left">🕚 <code>:clock11:</code></td>
+<td align="left">🕦 <code>:clock1130:</code></td>
+<td align="left">🕛 <code>:clock12:</code></td>
+</tr>
+<tr>
+<td align="left">🕧 <code>:clock1230:</code></td>
+<td align="left">🕑 <code>:clock2:</code></td>
+<td align="left">🕝 <code>:clock230:</code></td>
+</tr>
+<tr>
+<td align="left">🕒 <code>:clock3:</code></td>
+<td align="left">🕞 <code>:clock330:</code></td>
+<td align="left">🕓 <code>:clock4:</code></td>
+</tr>
+<tr>
+<td align="left">🕟 <code>:clock430:</code></td>
+<td align="left">🕔 <code>:clock5:</code></td>
+<td align="left">🕠 <code>:clock530:</code></td>
+</tr>
+<tr>
+<td align="left">🕕 <code>:clock6:</code></td>
+<td align="left">🕡 <code>:clock630:</code></td>
+<td align="left">🕖 <code>:clock7:</code></td>
+</tr>
+<tr>
+<td align="left">🕢 <code>:clock730:</code></td>
+<td align="left">🕗 <code>:clock8:</code></td>
+<td align="left">🕣 <code>:clock830:</code></td>
+</tr>
+<tr>
+<td align="left">🕘 <code>:clock9:</code></td>
+<td align="left">🕤 <code>:clock930:</code></td>
+<td align="left">💲 <code>:heavy_dollar_sign:</code></td>
+</tr>
+<tr>
+<td align="left">©️ <code>:copyright:</code></td>
+<td align="left">®️ <code>:registered:</code></td>
+<td align="left">™️ <code>:tm:</code></td>
+</tr>
+<tr>
+<td align="left">❌ <code>:x:</code></td>
+<td align="left">❗ <code>:heavy_exclamation_mark:</code></td>
+<td align="left">‼️ <code>:bangbang:</code></td>
+</tr>
+<tr>
+<td align="left">⁉️ <code>:interrobang:</code></td>
+<td align="left">⭕ <code>:o:</code></td>
+<td align="left">✖️ <code>:heavy_multiplication_x:</code></td>
+</tr>
+<tr>
+<td align="left">➕ <code>:heavy_plus_sign:</code></td>
+<td align="left">➖ <code>:heavy_minus_sign:</code></td>
+<td align="left">➗ <code>:heavy_division_sign:</code></td>
+</tr>
+<tr>
+<td align="left">💮 <code>:white_flower:</code></td>
+<td align="left">💯 <code>:100:</code></td>
+<td align="left">✔️ <code>:heavy_check_mark:</code></td>
+</tr>
+<tr>
+<td align="left">☑️ <code>:ballot_box_with_check:</code></td>
+<td align="left">🔘 <code>:radio_button:</code></td>
+<td align="left">🔗 <code>:link:</code></td>
+</tr>
+<tr>
+<td align="left">➰ <code>:curly_loop:</code></td>
+<td align="left">〰️ <code>:wavy_dash:</code></td>
+<td align="left">〽️ <code>:part_alternation_mark:</code></td>
+</tr>
+<tr>
+<td align="left">✅ <code>:white_check_mark:</code></td>
+<td align="left">🔲 <code>:black_square_button:</code></td>
+<td align="left">🔳 <code>:white_square_button:</code></td>
+</tr>
+<tr>
+<td align="left">⚫ <code>:black_circle:</code></td>
+<td align="left">⚪ <code>:white_circle:</code></td>
+<td align="left">🔴 <code>:red_circle:</code></td>
+</tr>
+<tr>
+<td align="left">🔵 <code>:large_blue_circle:</code></td>
+<td align="left">🔷 <code>:large_blue_diamond:</code></td>
+<td align="left">🔶 <code>:large_orange_diamond:</code></td>
+</tr>
+<tr>
+<td align="left">🔹 <code>:small_blue_diamond:</code></td>
+<td align="left">🔸 <code>:small_orange_diamond:</code></td>
+<td align="left">🔺 <code>:small_red_triangle:</code></td>
+</tr>
+<tr>
+<td align="left">🔻 <code>:small_red_triangle_down:</code></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">big bear</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://www.southbear.cn/archives/ecdd55dc.html">https://www.southbear.cn/archives/ecdd55dc.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">big bear</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/MD%E8%A1%A8%E6%83%85/">
+                                    <span class="chip bg-color">MD表情</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/archives/ecdd55dc.html">
+                    <div class="card-image">
+                        
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/MD/1.jpg" class="responsive-img" alt="MD的Emoji表情">
+                        
+                        <span class="card-title">MD的Emoji表情</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            前言：自从接触了markdown编辑器之后，一发不可收拾，看着自己的整理的笔记都特别赏心悦目。目前文档都是用markdown来写的,个人电脑用的是typora这个软件。markdown的语法其实并不难，花点心思，多敲几下就能上手，本篇是我自己使用过程中整理的一些语法，内容较多，有需要的同学可以自行收录，后续如果有新的比较好用的语法也会更新在本篇随笔。
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/MD/" class="post-category">
+                                    MD
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/MD%E8%A1%A8%E6%83%85/">
+                        <span class="chip bg-color">MD表情</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/archives/5bb38c9d.html">
+                    <div class="card-image">
+                        
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/hexo/photo/2.jpg" class="responsive-img" alt="hexo博客matery主题保姆级教程">
+                        
+                        <span class="card-title">hexo博客matery主题保姆级教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            主要针对新手保姆级，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" class="post-category">
+                                    博客配置
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('20')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE' || selection.getRangeAt(0).commonAncestorContainer.nodeName === 'CODE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 南方的熊<br />'
+            + '文章作者: big Bear<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number(''),
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
+</script>
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2023</span>
+            
+            <a href="/about" target="_blank">big Bear
+
+            <!--  
+              这一块关乎底部链接
+            #</a>
+            #|&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            #|&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" #target="_blank">big Bear</a>
+            -->
+            
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">19.7k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<!-- 建站时间 
+<script language=javascript> 
+function siteTime() { window.setTimeout("siteTime()", 1000);
+ var seconds = 1000; var minutes = seconds * 60;
+  var hours = minutes * 60; var days = hours * 24; 
+  var years = days * 365; var today = new Date(); 
+  var todayYear = today.getFullYear(); var todayMonth = today.getMonth() + 1;
+   var todayDate = today.getDate(); var todayHour = today.getHours(); 
+   var todayMinute = today.getMinutes(); var todaySecond = today.getSeconds();
+    /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳) year - 作为date对象的年份，为4位年份值 month - 0-11之间的整数，做为date对象的月份 day - 1-31之间的整数，做为date对象的天数 hours - 0(午夜24点)-23之间的整数，做为date对象的小时数 minutes - 0-59之间的整数，做为date对象的分钟数 seconds - 0-59之间的整数，做为date对象的秒数 microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+    
+    var t1 = Date.UTC(2017, 09, 11, 00, 00, 00); //北京时间2018-2-13 00:00:00 
+    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond); 
+    var diff = t2 - t1; var diffYears = Math.floor(diff / years); 
+    var diffDays = Math.floor((diff / days) - diffYears * 365); 
+    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours); 
+    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes); 
+    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds); 
+    document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒"; }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+ siteTime();
+ <span id="sitetime"></span>
+</script>
+
+-->
+
+
+
+
+
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
+
+</html>
