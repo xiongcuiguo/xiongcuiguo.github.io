@@ -142,6 +142,13 @@
   </url>
   
   <url>
+    <loc>https://www.southbear.cn/tags/Markdown%E8%A1%A8%E6%83%85/</loc>
+    <lastmod>2023-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.southbear.cn/tags/java/</loc>
     <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -150,13 +157,6 @@
   
   <url>
     <loc>https://www.southbear.cn/tags/rabbitMq/</loc>
-    <lastmod>2023-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.southbear.cn/tags/Markdown%E8%A1%A8%E6%83%85/</loc>
     <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -172,6 +172,13 @@
   </url>
   
   <url>
+    <loc>https://www.southbear.cn/categories/Markdown/</loc>
+    <lastmod>2023-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.southbear.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -180,13 +187,6 @@
   
   <url>
     <loc>https://www.southbear.cn/categories/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2023-03-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.southbear.cn/categories/Markdown/</loc>
     <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
