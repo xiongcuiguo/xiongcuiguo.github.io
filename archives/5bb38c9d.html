@@ -235,7 +235,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/xiongcuiguo/xiongcuiguo.github.io" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -292,7 +292,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/xiongcuiguo/xiongcuiguo.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -391,14 +391,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    16.8k
+                    16.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    70 分
+                    69 分
                 </div>
                 
 
@@ -449,7 +449,7 @@
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><hr>
 <p>一直想去弄自己的博客，当时初衷就是想拿来作为自己的在线笔记本，做做学习记录，分享一些学到的东西，使用第三方提供的博客服务其实也挺方便，现在市面上提供类似服务的博客网站也很多，如CSDN，博客园，简书等平台，可以直接在上面发表，用户交互做的好，写的文章百度也能搜索的到。但是缺点是比较不自由，会受到平台的各种限制和恶心的广告，个性化不足。而自己购买域名和服务器，搭建博客的成本实在是太高了，不光是说这些购买成本，单单是花力气去自己搭这么一个网站，还要定期的维护它，对于我们大多数人来说，也是没有这样的精力和时间。那么，我们能不能自己定制一个自己喜欢的个性化博客，同时也不用付出太高的成本啦？</p>
 <p>这就引出了第三种选择，基于开源框架搭建博客，然后直接在<code>github page</code>平台上托管我们的博客。这样就可以安心的来写作，又不需要定期维护，基于这个想法，今年的时候开始搭建第一个属于自己的独立博客，前后断续弄了近一周，到现在稍微有点模样了。我想可能有很多小伙伴应该也想过搭建一个自己的博客，当然，网上也有一堆详细教程。写这篇博客的目的大概有两个，第一个是当做自己的搭建记录，方便以后自己随时查看提示修改，第二个是稍稍总结一下具体的搭建步骤以及一些支持个性化定制的博客源码修改的教程，稍稍分享一下这些修改经验，当然，更多的一些个性化操作需要你自己以后在这个基础上慢慢去摸索，有些写的不太好的地方还希望看到的小伙伴多多包涵。</p>
-<p>本博客基于<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，所以首先要了解一下我们搭建博客所要用到的框架。<code>Hexo</code>是高效的静态网站生成框架，它基于<code>Node.js</code>，快速，简单且功能强大，是搭建博客的首选框架。大家可以进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a>官网进行详细查看，因为<code>Hexo</code>的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。通过<code>Hexo</code>，你可以直接使用<code>Markdown</code>语法来撰写博客。相信很多小伙伴写工程都写过<code>README.md</code>文件吧，对，就是这个格式的！写完后只需两三条命令即可将生成的网页上传到<code>github</code>或者<code>coding</code>等代码管理托管平台，然后别人就可以浏览你的博客网页啦。是不是很简单？你无需关心网页源代码的具体生成细节，只需要用心写好你的博客文章内容就行了。</p>
+<p>本博客基于<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>，所以首先要了解一下我们搭建博客所要用到的框架。<code>Hexo</code>是高效的静态网站生成框架，它基于<code>Node.js</code>，快速，简单且功能强大，是搭建博客的首选框架。大家可以进入<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">hexo</a>官网进行详细查看，因为<code>Hexo</code>的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。通过<code>Hexo</code>，你可以直接使用<code>Markdown</code>语法来撰写博客。相信很多小伙伴写工程都写过<code>README.md</code>文件吧，对，就是这个格式的！写完后只需两三条命令即可将生成的网页上传到<code>github</code>等代码管理托管平台，然后别人就可以浏览你的博客网页啦。是不是很简单？你无需关心网页源代码的具体生成细节，只需要用心写好你的博客文章内容就行了。</p>
 <blockquote>
 <p>简单总结：<code>Hexo</code>, 产品成熟，使用简单，功能强大，有丰富的各种插件资源；但，像发布后台、站内搜索，评论系统类似诉求，虽然有对应的工具，但也需要自己折腾下，后续我们一步一步介绍。</p>
 </blockquote>
@@ -480,7 +480,6 @@
 <p><strong>linux：</strong>对<code>linux</code>来说实在是太简单了，因为最早的<code>git</code>就是在<code>linux</code>上编写的，只需要一行代码</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">git</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>安装完成后在命令提示符中输入<code>git --version</code>来查看一下版本验证是否安装成功。</p>
 <h2 id="2-安装nodejs"><a href="#2-安装nodejs" class="headerlink" title="2. 安装nodejs"></a>2. 安装nodejs</h2><hr>
 <p><code>Hexo</code>是基于<code>node.js</code>编写的，所以需要安装一下<code>node.js</code>和里面的<code>npm</code>工具。</p>
@@ -489,7 +488,6 @@
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> nodejs
 <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">npm</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>不过不推荐命令行安装，有时候有问题，建议直接到官网去下载编译好的压缩文件，如下所示:</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/hexo/file/1.png"></p>
 <p>然后解压到你指定的文件夹即可，比如我解压到我系统的<code>/home/shw/MySoftwares</code>目录下了</p>
@@ -499,36 +497,29 @@
 <p>配置一下环境变量</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/profile
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>复制下面两行到刚打开的<code>profile</code>文件最底部(注意<code>node</code>的安装地址<code>/home/shw/MySoftwares/node-v12.8.0-linux-x64</code>换成自己的)：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">export</span> NODE_HOME<span class="token operator">=</span>/home/shw/MySoftwares/node-v12.8.0-linux-x64
 <span class="token function">export</span> PATH<span class="token operator">=</span><span class="token variable">$PATH</span><span class="token keyword">:</span><span class="token variable">$NODE_HOME</span>/bin
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>保存后退出，再执行下面命令将环境变量生效：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">source</span> /etc/profile
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>将目录软链接到全局环境下（命令后面的<code>/usr/local/bin/node</code>是固定的）</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">ln</span> -s /home/shw/MySoftwares/node-v12.8.0-linux-x64/node /usr/local/bin/node
 <span class="token function">sudo</span> <span class="token function">ln</span> -s /home/shw/MySoftwares/node-v12.8.0-linux-x64/npm /usr/local/bin/npm
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>这样安装好了以后使用<code>npm</code>安装的包(比如：<code>ionic serve</code>)，使用包的命令时可能会提示找不到命令，没关系，在用户目录下终端执行下面命令(固定写法)：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token keyword">echo</span> -e <span class="token string">"export PATH=<span class="token variable"><span class="token variable">$(</span><span class="token function">npm</span> prefix -g<span class="token variable">)</span></span>/bin:<span class="token variable">$PATH</span>"</span> <span class="token operator">>></span> ~/.bashrc <span class="token operator">&amp;&amp;</span> <span class="token function">source</span> ~/.bashrc
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>这样我们在所有用户下，都可以使用<code>npm</code>，也可以使用<code>npm</code>安装的包的命令。成功的将<code>nodejs</code>安装并配置到全局环境下。</p>
 <p>安装完后，打开命令行终端，输入:</p>
 <pre class="line-numbers language-bash"><code class="language-bash">node -v
 <span class="token function">npm</span> -v
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>检查一下有没有安装成功</p>
 <h2 id="添加国内镜像源"><a href="#添加国内镜像源" class="headerlink" title="添加国内镜像源"></a><strong>添加国内镜像源</strong></h2><p>如果没有梯子的话，可以使用阿里的国内镜像进行加速。</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token keyword">set</span> registry https://registry.npm.taobao.org
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <h2 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3. 安装Hexo"></a>3. 安装Hexo</h2><hr>
 <p>前面<code>git</code>和<code>nodejs</code>安装好后，就可以安装<code>hexo</code>了，你可以先创建一个文件夹<code>MyBlog</code>，用来存放自己的博客文件，然后<code>cd</code>到这个文件夹下（或者在这个文件夹下直接右键<code>git bash</code>打开）。</p>
 <p>比如我的博客文件都存放在<code>D:\Study\MyBlog</code>目录下。</p>
@@ -536,18 +527,15 @@
 <p>定位到该目录下，输入<code>npm install -g hexo-cli</code>安装<code>Hexo</code>。可能会有几个报错，无视它就行。</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
 <p>至此<code>hexo</code>就安装完了。</p>
 <p>接下来初始化一下<code>hexo</code>,即初始化我们的网站，输入<code>hexo init</code>初始化文件夹</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo init MyBlog
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>这个<code>MyBlog</code>可以自己取什么名字都行，然后，接着输入<code>npm install</code>安装必备的组件。</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cd</span> MyBlog      //进入这个MyBlog文件夹
 <span class="token function">npm</span> <span class="token function">install</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>新建完成后，指定文件夹<code>MyBlog</code>目录下有：</p>
 <ul>
 <li><code>node_modules:</code> 依赖包</li>
@@ -561,7 +549,6 @@
 <pre class="line-numbers language-bash"><code class="language-bash">hexo g
 hexo server<span class="token punctuation">(</span>或者简写:hexo s）<span class="token punctuation">)</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>然后浏览器打开<a target="_blank" rel="noopener" href="http://localhost:4000/%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%95%A6%EF%BC%8C%E6%95%88%E6%9E%9C%E5%A6%82%E4%B8%8B%EF%BC%9A">http://localhost:4000/，就可以看到我们的博客啦，效果如下：</a></p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/hexo/file/2.png"></p>
 <p>按<code>ctrl+c</code>关闭本地服务器。</p>
@@ -571,35 +558,30 @@ hexo server<span class="token punctuation">(</span>或者简写:hexo s）<span c
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/hexo/file/3.png"></p>
 <p>然后如上图所示，输入自己的项目名字，后面一定要加<code>.github.io</code>后缀，<code>README</code>初始化也要勾上，项目一定要公开public。</p>
 <blockquote>
-<p>要创建一个和你用户名相同的仓库，后面加.[<a href="http://github.io，只有这样，将来要部署到的用户名。例如我的：[http://xiongcuiguo.gitee.io/](http://xiongcuiguo.gitee.io/)">http://github.io，只有这样，将来要部署到的用户名。例如我的：[http://xiongcuiguo.gitee.io/](http://xiongcuiguo.gitee.io/)</a></p>
+<p>要创建一个和你用户名相同的仓库，后面加 yonghuming.github.io，只有这样，将来要部署到的用户名。例如我的：<a target="_blank" rel="noopener" href="http://xiongcuiguo.gitee.io/">http://xiongcuiguo.github.io/</a></p>
 </blockquote>
 <h2 id="5-生成SSH添加到GitHub"><a href="#5-生成SSH添加到GitHub" class="headerlink" title="5. 生成SSH添加到GitHub"></a>5. 生成SSH添加到GitHub</h2><hr>
 <p>生成<code>SSH</code>添加到<code>GitHub</code>，连接<code>Github</code>与本地。<br>右键打开<code>git bash</code>，然后输入下面命令：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"yourname"</span>
 <span class="token function">git</span> config --global user.email <span class="token string">"youremail"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>这里的<code>yourname</code>输入你的<code>GitHub</code>用户名，<code>youremail</code>输入你<code>GitHub</code>的邮箱。这样<code>GitHub</code>才能知道你是不是对应它的账户。例如我的：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"***"</span>
 <span class="token function">git</span> config --global user.email <span class="token string">"***@std.uestc.edu.cn"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>可以用以下两条，检查一下你有没有输对</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config user.name
 <span class="token function">git</span> config user.email
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>然后创建<code>SSH</code>,一路回车</p>
 <blockquote>
 <p><code>ssh</code>，简单来讲，就是一个秘钥，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在<code>GitHub</code>上，这样当你链接<code>GitHub</code>自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过<code>git</code>上传你的文件到<code>GitHub</code>上。  </p>
 </blockquote>
 <pre class="line-numbers language-bash"><code class="language-bash">ssh-keygen -t rsa -C <span class="token string">"youremail"</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>这个时候它会告诉你已经生成了<code>.ssh</code>的文件夹。在你的电脑中找到这个文件夹。或者<code>git bash</code>中输入</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">cat</span> ~/.ssh/id_rsa.pub
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>将输出的内容复制到框中，点击确定保存。</p>
 <p>打开<a target="_blank" rel="noopener" href="http://github.com/">github</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个<code>SSH</code>，名字随便取一个都可以，把你的<code>id_rsa.pub</code>里面的信息复制进去。如图：</p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/hexo/file/4.png"></p>
@@ -612,24 +594,20 @@ hexo server<span class="token punctuation">(</span>或者简写:hexo s）<span c
   github: git@github.com:xiongcuiguo/xiongcuiguo.github.io.git
   branch: master
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p><code>repository</code>修改为你自己的<code>github</code>项目地址即可，就是部署时，告诉工具，将生成网页通过<code>git</code>方式上传到你对应的链接仓库中。</p>
 <p>这个时候需要先安装<code>deploy-git</code> ，也就是部署的命令,这样你才能用命令部署到<code>GitHub</code>。</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>然后</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo clean
 hexo generate
 hexo deploy
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>其中 <code>hexo clean</code>清除了你之前生成的东西，也可以不加。 <code>hexo generate</code>顾名思义，生成静态文章，可以用 <code>hexo g</code>缩写 ，<code>hexo deploy</code>部署文章，可以用<code>hexo d</code>缩写</p>
 <blockquote>
 <p>注意<code>deploy</code>时可能要你输入<code>username</code>和<code>password</code>。</p>
 </blockquote>
-<p>得到下图就说明部署成功了，过一会儿就可以在<a target="_blank" rel="noopener" href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/hexo/file/5.png"></p>
+<p>过一会儿就可以在<a target="_blank" rel="noopener" href="http://yourname.github.io/">http://yourname.github.io</a> 这个网站看到你的博客了！！</p>
 <h2 id="7-设置个人域名"><a href="#7-设置个人域名" class="headerlink" title="7. 设置个人域名"></a>7. 设置个人域名</h2><hr>
 <p>现在你的个人网站的地址是<code>yourname.github.io</code>，如果觉得这个网址逼格不太够，这就需要你设置个人域名了。但是需要花钱，其实蛮不推荐的，毕竟申请完域名，必须强制需要备案，备案你还需要买服务器。</p>
 <blockquote>
@@ -663,7 +641,6 @@ hexo deploy
     - tags
 - themes
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Json</p>
 <p><code>node_modules</code>是<code>node.js</code>各种库的目录，<code>public</code>是生成的网页文件目录，<code>scaffolds</code>里面就三个文件，存储着新文章和新页面的初始设置，<code>source</code>是我们最常用到的一个目录，里面存放着文章、各类页面、图像等文件，<code>themes</code>存放着主题文件，一般也用不到。</p>
 <p>我们平时写文章只需要关注<code>source/_posts</code>这个文件夹就行了。</p>
 <h3 id="1-2-hexo基本配置"><a href="#1-2-hexo基本配置" class="headerlink" title="1.2 hexo基本配置"></a>1.2 hexo基本配置</h3><hr>
@@ -678,17 +655,16 @@ hexo deploy
 <p>比如我新建一个文章叫<code>temp.md</code>，那么这个时候他自动生成的地址就是<code>http://yoursite.com/2018/09/05/temp</code>。</p>
 <p>以下是官方给出的示例，关于链接的变量还有很多，需要的可以去官网上查找 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接</a> 。</p>
 <blockquote>
-<p>参数结果:year/:month/:day/:title/2019/08/10/hello-world :year-:month-:day-:title.html 2022-03-10-hello-world.html :category/:titlefoo/bar/hello-world</p>
+<p>参数结果:year/:month/:day/:title/2022/04/10/hello-world :year-:month-:day-:title.html 2022-04-10-hello-world.html :category/:titlefoo/bar/hello-world</p>
 </blockquote>
 <p>再往下翻，中间这些都默认就好了。</p>
 <pre class="line-numbers language-yml"><code class="language-yml">theme: landscap
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Yml</p>
 <p><code>theme</code>就是选择什么主题，也就是在<code>themes</code>这个文件夹下，在官网上有很多个主题，默认给你安装的是<code>lanscape</code>这个主题。当你需要更换主题时，在官网上下载，把主题的文件放在<code>themes</code>文件夹下，再修改这个主题参数就可以了。</p>
 <h4 id="1-2-3-Front-matter"><a href="#1-2-3-Front-matter" class="headerlink" title="1.2.3 Front-matter"></a>1.2.3 Front-matter</h4><hr>
 <p><code>Front-matter</code> 是<code>md</code>文件最上方以 <code>---</code>分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<pre><code>title: Hexo+Github博客搭建记录
-date: 2019-08-10 21:44:44
+<pre><code>title: hexo博客matery主题保姆级教程 
+date: 2022-04-10 21:44:44
 </code></pre>
 <p>下是预先定义的参数，您可在模板中使用这些参数值并加以利用。</p>
 <p>参数描述<code>layout</code>布局<code>title</code>标题<code>date</code>建立日期<code>updated</code>更新日期<code>comments</code>开启文章的评论功能<code>tags</code>标签（不适用于分页）<code>categories</code>分类（不适用于分页）<code>permalink</code>覆盖文章网址</p>
@@ -709,44 +685,37 @@ categories:                             分类
   - 博客配置
 abbrlink: 5bb38c9d                      随机生产的文章编码
 date: 2022-04-18 14:41:50               时间
-summary: 主要针对新手保姆级，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢                        文章介绍                          
-password:  asfdsfadsfdsafds15f1sdaf16sda1f6ds1af6as15f61ad5                     密码
+summary: 主要针对新手保姆级                文章介绍                          
+password:  asfdsfadsfdsafds5            密码
 ---
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <h4 id="1-2-4-layout（布局）"><a href="#1-2-4-layout（布局）" class="headerlink" title="1.2.4 layout（布局）"></a>1.2.4 layout（布局）</h4><hr>
 <p><strong>1.2.4.1 post</strong></p>
 <p>当你每一次使用代码</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo new XXX
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>它其实默认使用的是<code>post</code>这个布局，也就是在<code>source</code>文件夹下的<code>_post</code>里面。</p>
 <p><code>Hexo</code>有三种默认布局：<code>post</code>、<code>page</code>和<code>draft</code>，它们分别对应不同的路径，而您自定义的其他布局和<code>post</code>相同，都将储存到<code>source/_posts</code>文件夹。</p>
 <p>而new这个命令其实是：</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo new <span class="token punctuation">[</span>layout<span class="token punctuation">]</span> <span class="token operator">&lt;</span>title<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>只不过这个<code>layout</code>默认是<code>post</code>罢了。</p>
 <p><strong>1.2.4.2 page</strong></p>
 <p>如果你想另起一页，那么可以使用</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo new page newpage
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>系统会自动给你在<code>source</code>文件夹下创建一个<code>newpage</code>文件夹，以及<code>newpage</code>文件夹中的<code>index.md</code>，这样你访问的<code>newpage</code>对应的链接就是<a target="_blank" rel="noopener" href="http://xxx.xxx/newpage">http://xxx.xxx/newpage</a></p>
 <p><strong>1.2.4.3 draft</strong></p>
 <p><code>draft</code>是草稿的意思，也就是你如果想写文章，又不希望被看到，那么可以</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo new draft newdraft
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>这样会在<code>source/_draft</code>中新建一个<code>newdraft.md</code>文件，如果你的草稿文件写的过程中，想要预览一下，那么可以使用</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo server --draft
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>在本地端口中开启服务预览。</p>
 <p>如果你的草稿文件写完了，想要发表到<code>post</code>中，</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo publish draft newdraft
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>就会自动把<code>newdraft.md</code>发送到<code>post</code>中。</p>
 <h2 id="2-更换主题"><a href="#2-更换主题" class="headerlink" title="2. 更换主题"></a>2. 更换主题</h2><hr>
 <p>我们在了解<code>Hexo</code>博客文件基础之后，知道主题文件就放在<code>themes</code>文件下，那么我们就可以去Hexo官网下载喜欢的主题，复制进去然后修改参数即可。<br>网上大多数主题都是github排名第一的<code>Next</code>主题，但是我个人不是很喜欢，我在网上看到一个主题感觉还不错：<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a>，地址在<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">传送门</a>。这个主题看着比较漂亮，并且响应式比较友好，点起来很舒服，功能也比较很多。</p>
@@ -794,17 +763,15 @@ tags<span class="token operator">:</span>
 categories<span class="token operator">:</span>
 ---
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Json</p>
 <p>这样新建文章后 一些<code>Front-matter</code>参数不用你自己补充了，修改对应信息就可以了。</p>
 <h3 id="2-2-添加404页面"><a href="#2-2-添加404页面" class="headerlink" title="2.2 添加404页面"></a>2.2 添加404页面</h3><hr>
 <p>原来的主题没有<code>404</code>页面，我们加一个。首先在<code>/source/</code>目录下新建一个<code>404.md</code>，内容如下：</p>
 <pre class="line-numbers language-json"><code class="language-json">title<span class="token operator">:</span> <span class="token number">404</span>
-date<span class="token operator">:</span> <span class="token number">2019</span>-<span class="token number">08</span>-<span class="token number">5</span> <span class="token number">16</span><span class="token operator">:</span><span class="token number">41</span><span class="token operator">:</span><span class="token number">10</span>
+date<span class="token operator">:</span> <span class="token number">2022</span>-<span class="token number">08</span>-<span class="token number">5</span> <span class="token number">16</span><span class="token operator">:</span><span class="token number">41</span><span class="token operator">:</span><span class="token number">10</span>
 type<span class="token operator">:</span> <span class="token string">"404"</span>
 layout<span class="token operator">:</span> <span class="token string">"404"</span>
 description<span class="token operator">:</span> <span class="token string">"Oops～，我崩溃了！找不到你想要的页面 :("</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Json</p>
 <p>然后在<code>/themes/matery/layout/</code>目录下新建一个<code>404.ejs</code>文件，内容如下：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
     <span class="token comment" spellcheck="true">/* don't remove. */</span>
@@ -835,7 +802,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'.bg-cover'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">css</span><span class="token punctuation">(</span><span class="token string">'background-image'</span><span class="token punctuation">,</span> <span class="token string">'url(/medias/banner/'</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getDay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'.jpg)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <h3 id="2-3“关于”页面增加简历（可选）"><a href="#2-3“关于”页面增加简历（可选）" class="headerlink" title="2.3“关于”页面增加简历（可选）"></a>2.3“关于”页面增加简历（可选）</h3><hr>
 <p>修改<code>/themes/matery/layout/about.ejs</code>，找到<code>&lt;div class="card"&gt;</code>标签，然后找到它对应的<code>&lt;/div&gt;</code>标签，接在后面新增一个<code>card</code>，语句如下：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -851,7 +817,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <p>这样就会多出一张<code>card</code>，然后可以在<code>/source/about/index.md</code>下面写上你的简历了，当然这里的位置随你自己设置，你也可以把简历作为第一个<code>card</code>。</p>
 <h3 id="2-4-数学公式渲染和代码高亮"><a href="#2-4-数学公式渲染和代码高亮" class="headerlink" title="2.4 数学公式渲染和代码高亮"></a>2.4 数学公式渲染和代码高亮</h3><hr>
 <p><strong>2.4.1 解决mathjax与代码高亮的冲突</strong></p>
@@ -860,25 +825,20 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 <p>打开<code>/themes/matery/layout</code>中的<code>post.ejs</code>文件，在最下方粘贴如下代码：</p>
 <pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Javascript</p>
 <p>由于<code>markdown</code>语法与<code>mathjax</code>语法存在冲突，所以还需要修改源文件。</p>
 <p>打开<code>/node_modules/marked/lib</code>中的<code>marked.js</code>文件，第539行的<code>escape:</code>处替换成：</p>
 <pre class="line-numbers language-js"><code class="language-js">escape<span class="token punctuation">:</span> <span class="token regex">/^$[`*\[\]()#$+\-.!_>])/</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Js</p>
 <p>第553行的<code>em:</code>处替换成：</p>
 <pre class="line-numbers language-js"><code class="language-js">em<span class="token punctuation">:</span> <span class="token regex">/^\*((?:\*\*|[\s\S])+?)\*(?!\*)/</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Js</p>
 <p>这时在文章里写数学公式基本没有问题了，但是要注意：<br><strong>数学公式中如果出现了连续两个{，中间一定要加空格！</strong></p>
 <p>举个例子:<br>行内公式：$y = f(x)$<br>代码：</p>
 <pre class="line-numbers language-tex"><code class="language-tex">$y = f(x)$
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Tex</p>
 <p>行间公式：<br>[y = {f_{ {g_1}}}(x)]<br>代码：</p>
 <pre class="line-numbers language-tex"><code class="language-tex">\\[y = {f_{ {g_1}}}(x)\\]
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Tex</p>
 <blockquote>
 <p>注意上面花括号之间有空格！</p>
 </blockquote>
@@ -920,11 +880,9 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     <span class="token function">siteTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>然后在合适的地方（比如<code>copyright</code>声明后面）加上下面的代码就行了：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sitetime<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Html</p>
 <h3 id="2-6-修改不蒜子初始化计数"><a href="#2-6-修改不蒜子初始化计数" class="headerlink" title="2.6 修改不蒜子初始化计数"></a>2.6 修改不蒜子初始化计数</h3><hr>
 <p>因为不蒜子至今未开放注册，所以没办法在官网修改初始化，只能自己动手了。和上一条一样，我们在<code>/themes/matery/layout/_partial</code>里的<code>footer.ejs</code>文件最后加上：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
@@ -947,7 +905,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>然后把上面几行有段代码：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(theme.busuanziStatistics</span> <span class="token attr-name">&amp;&amp;</span> <span class="token attr-name">theme.busuanziStatistics.totalTraffic)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>busuanzi_container_site_pv<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -961,7 +918,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <p>修改为：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(theme.busuanziStatistics</span> <span class="token attr-name">&amp;&amp;</span> <span class="token attr-name">theme.busuanziStatistics.totalTraffic)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>busuanzi_container_site_pv<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">='</span><span class="token attr-value"><span class="token property">display</span><span class="token punctuation">:</span>none</span><span class="token punctuation">'</span></span><span class="token punctuation">></span></span>
@@ -975,18 +931,15 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <p>其实就是增加了两个<code>style='display:none'</code>而已。</p>
 <h3 id="2-7-添加动漫人物"><a href="#2-7-添加动漫人物" class="headerlink" title="2.7 添加动漫人物"></a>2.7 添加动漫人物</h3><hr>
 <p>其实三步就行了，不用像网上有些教程那么复杂。</p>
 <p><strong>第一步：</strong></p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save hexo-helper-live2d
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p><strong>第二步：</strong></p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> live2d-widget-model-shizuku
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <blockquote>
 <p>这里的动漫模型可以改，只需要下载对应模型就行了，你可以官方仓库去看有哪些模型，下载你喜欢的就行。</p>
 </blockquote>
@@ -1010,10 +963,9 @@ description<span class="token operator">:</span> <span class="token string">"Oop
     react:
         opacity: 0.7
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>然后<code>hexo g</code>再<code>hexo s</code>就能预览出效果了，但是有个注意的地方，<strong>这个动漫人物最好不要和不蒜子同时使用</strong>，不然不蒜子会显示不出来。至于解决办法后续更新。</p>
 <blockquote>
-<p><strong>解决动漫人物和不蒜子不能同时使用的<code>bug</code>（2019.08.11）</strong>：</p>
+<p><strong>解决动漫人物和不蒜子不能同时使用的<code>bug</code>（2022.04.11）</strong>：</p>
 </blockquote>
 <p>打开<code>themes\matery\layout\_partial</code>中的<code>footer.ejs</code>，将本站总访问量和访客数的代码改为如下：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>totalTraffic<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>      
@@ -1029,14 +981,12 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>变化就在下面两句，将源代码对应字段后面的<code>＜/span＞</code>写在前面了。</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_pv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
 <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_uv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Js</p>
 <blockquote>
-<p><strong>发现按照上面改了过后，又出现一个新<code>bug</code>：文章头部的阅读次数不显示了，解决办法：（2019.08.11）</strong>：</p>
+<p><strong>发现按照上面改了过后，又出现一个新<code>bug</code>：文章头部的阅读次数不显示了，解决办法：（2022.04.11）</strong>：</p>
 </blockquote>
 <p>打开<code>themes\matery\layout\_partial</code>中的<code>post-detail.ejs</code>，找到对应代码字段：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
@@ -1047,7 +997,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>修改为下面的就可以了：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>busuanziStatistics <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>busuanziStatistics<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
         <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"busuanzi_container_site_pv"</span> style<span class="token operator">=</span><span class="token string">'display:none'</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
@@ -1056,7 +1005,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <h3 id="2-8-添加评论插件"><a href="#2-8-添加评论插件" class="headerlink" title="2.8 添加评论插件"></a>2.8 添加评论插件</h3><hr>
 <p>由于这个主题自带了<code>gittalk</code>、<code>gitment</code>、<code>valine</code>等评论插件，所以我们只需要对应插件参数就行了。</p>
 <p>当然也可以用其他评论插件，只需要配置对应项就是了，不是自带的可以照着网上的教程自己弄一个，类似的文章有很多，可以搜索关键字就行了。</p>
@@ -1080,7 +1028,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 <p>粘贴到文章对应位置就行了，为了美观，设置一下居中，具体代码如下：</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>middle<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>这里粘贴刚刚复制的代码<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Html</p>
 <h3 id="2-10-博客音乐板块"><a href="#2-10-博客音乐板块" class="headerlink" title="2.10 博客音乐板块"></a>2.10 博客音乐板块</h3><hr>
 <p>如果我们自己写博客写疲劳了，想放松一下听听歌又不想切出博客主页，那么我们可以自己定制一个博客音乐播放界面，把自己喜欢的歌曲都放进来，这里用到是Aplayer插件，但是歌曲来源需要我们自己定义，但是，因为各大音乐平台，由于版权原因，很多歌曲是不支持外链播放的，难道我们就必须每首歌下载然后上传云空间，再获取词曲封面么？这就比较麻烦了。其实不然，研究了半个小时，我发现可以采取下面的办法，很方便：</p>
 <ul>
@@ -1092,7 +1039,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 <p>为博客新增对<code>emoji</code>表情的支持，使用到了 <a target="_blank" rel="noopener" href="https://npm.taobao.org/package/hexo-filter-github-emojis">hexo-filter-github-emojis</a> 的 Hexo 插件来支持 <code>emoji</code>表情的生成，把对应的<code>markdown emoji</code>语法（<code>::</code>,例如：<span class="github-emoji"><span>😄</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span> <code>:smile:</code>）转变成会跳跃的<code>emoji</code>表情，安装命令如下：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-filter-github-emojis --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
 <pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">githubEmojis</span><span class="token punctuation">:</span>
   <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
@@ -1101,7 +1047,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
   <span class="token key atrule">styles</span><span class="token punctuation">:</span>
   <span class="token key atrule">customEmojis</span><span class="token punctuation">:</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yaml</p>
 <p>执行 <code>hexo clean &amp;&amp; hexo g</code> 重新生成博客文件，然后就可以在文章中对应位置看到你用<code>emoji</code>语法写的表情了。</p>
 <p><strong>emoji支持</strong></p>
 <h3 id="2-12-Valine评论模块修改"><a href="#2-12-Valine评论模块修改" class="headerlink" title="2.12 Valine评论模块修改"></a>2.12 Valine评论模块修改</h3><hr>
@@ -1117,7 +1062,6 @@ description<span class="token operator">:</span> <span class="token string">"Oop
   pageSize: 10
   placeholder: 'just go go' # Comment Box placeholder
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <blockquote>
 <p>注意：<code>Valine</code>用在<code>matery</code>主题上有个<code>bug</code>就是第一条评论位置会错位</p>
 </blockquote>
@@ -1125,8 +1069,7 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 <p>解决办法：<br><code>F12</code>开发者模式，控制台定位<code>bug</code>位置，修改参数，调整对应主题源文件参数，得以解决。</p>
 <h3 id="2-13-添加鼠标点击烟花爆炸效果"><a href="#2-13-添加鼠标点击烟花爆炸效果" class="headerlink" title="2.13 添加鼠标点击烟花爆炸效果"></a>2.13 添加鼠标点击烟花爆炸效果</h3><hr>
 <p>在 /themes/matery/source/js 新建文件 fireworks.js，并添加如下代码</p>
-<p>[ Download Now</p>
-<p>](<a target="_blank" rel="noopener" href="http://49.235.106.229/js/fireworks.js">http://49.235.106.229/js/fireworks.js</a>)</p>
+<p><a target="_blank" rel="noopener" href="http://49.235.106.229/js/fireworks.js"> Download Now </a></p>
 <p>然后在 /themes/matery/layout/_partial/footer.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>fireworks<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
 <span class="token operator">&lt;</span>canvas <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fireworks"</span> style<span class="token operator">=</span><span class="token string">"position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"</span> <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>canvas<span class="token operator">></span>
@@ -1134,17 +1077,14 @@ description<span class="token operator">:</span> <span class="token string">"Oop
 <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/js/fireworks.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>在主题配置文件 .yml中配置:</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># 鼠标点击烟花爆炸动效
 fireworks:
   enable: true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <h3 id="2-14-添加页面樱花飘落动效"><a href="#2-14-添加页面樱花飘落动效" class="headerlink" title="2.14 添加页面樱花飘落动效"></a>2.14 添加页面樱花飘落动效</h3><hr>
 <p>在 /themes/matery/source/js 新建文件 sakura.js，并添加如下代码</p>
-<p>[ Download Now</p>
-<p>](<a target="_blank" rel="noopener" href="http://49.235.106.229/js/sakura.js">http://49.235.106.229/js/sakura.js</a>)</p>
+<p><a target="_blank" rel="noopener" href="http://49.235.106.229/js/sakura.js"> Download Now </a></p>
 <p>然后在 /themes/matery/layout/_partial/head.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>sakura<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
@@ -1156,17 +1096,14 @@ fireworks:
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>在主题配置文件 .yml中配置:</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># 页面樱花飘落动效
 sakura:
   enable: true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <h3 id="2-15-添加鼠标点击文字特效"><a href="#2-15-添加鼠标点击文字特效" class="headerlink" title="2.15 添加鼠标点击文字特效"></a>2.15 添加鼠标点击文字特效</h3><hr>
 <p>在 /themes/matery/source/js 新建文件 wenzi.js，并添加如下代码</p>
-<p>[ Download Now</p>
-<p>](<a target="_blank" rel="noopener" href="http://49.235.106.229/js/wenzi.js">http://49.235.106.229/js/wenzi.js</a>)</p>
+<p><a target="_blank" rel="noopener" href="http://49.235.106.229/js/wenzi.js"> Download Now </a></p>
 <p>然后在 /themes/matery/layout/_partial/head.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>wenzi<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
@@ -1178,17 +1115,14 @@ sakura:
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>在主题配置文件 .yml中配置:</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># 页面樱花飘落动效
 wenzi:
   enable: true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <h3 id="2-16-添加页面雪花飘落动效"><a href="#2-16-添加页面雪花飘落动效" class="headerlink" title="2.16 添加页面雪花飘落动效"></a>2.16 添加页面雪花飘落动效</h3><hr>
 <p>在 /themes/matery/source/js 新建文件 xuehuapiaoluo.js，并添加如下代码</p>
-<p>[ Download Now</p>
-<p>](<a target="_blank" rel="noopener" href="http://49.235.106.229/js/xuehuapiaoluo.js">http://49.235.106.229/js/xuehuapiaoluo.js</a>)</p>
+<p><a target="_blank" rel="noopener" href="http://49.235.106.229/js/xuehuapiaoluo.js"> Download Now </a></p>
 <p>然后在 /themes/matery/layout/_partial/head.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>xuehuapiaoluo<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span><span class="token operator">></span>
@@ -1200,13 +1134,11 @@ wenzi:
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>在主题配置文件 .yml中配置:</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># 页面樱花飘落动效
 xuehuapiaoluo:
   enable: true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <h3 id="2-17-添加博客天气插件"><a href="#2-17-添加博客天气插件" class="headerlink" title="2.17 添加博客天气插件"></a>2.17 添加博客天气插件</h3><hr>
 <p>在搜寻插件的过程中无意间用 google 搜到的一个网站，使用非常简单，在这里附上插件添加的方法</p>
 <p>中国天气网：<a target="_blank" rel="noopener" href="https://cj.weather.com.cn/plugin/pc">https://cj.weather.com.cn/plugin/pc</a></p>
@@ -1215,7 +1147,6 @@ xuehuapiaoluo:
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"> WIDGET <span class="token operator">=</span> <span class="token punctuation">{</span>FID<span class="token punctuation">:</span> <span class="token string">'your FID'</span><span class="token punctuation">}</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span> 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://apip.weatherdt.com/float/static/js/r.js?v<span class="token punctuation">=</span>1111<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <p>在 /themes/matery/source/layout/_widget 新建文件 weather.ejs，把上面生成的代码添加进入,可以设置只有桌面端显示,如下修改:</p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token comment" spellcheck="true">&lt;!-- 天气接口  big  bear   add 2022.03.14 --></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript">
@@ -1231,27 +1162,23 @@ xuehuapiaoluo:
   <span class="token punctuation">}</span>
   </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <p>然后在 /themes/matery/layout/_partial/layout.ejs 中添加如下代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 天气接口控件  big  bear   add <span class="token number">2022.03</span><span class="token punctuation">.</span><span class="token number">14</span> <span class="token operator">--</span><span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>weather<span class="token punctuation">.</span>enable<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
   <span class="token operator">&lt;</span><span class="token operator">%</span><span class="token operator">-</span> <span class="token function">partial</span><span class="token punctuation">(</span><span class="token string">'_widget/weather'</span><span class="token punctuation">)</span> <span class="token operator">%</span><span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>在主题配置文件 .yml中配置:</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># 天气接口插件
 weather:
   enable: true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p><strong>当然,如果你不想搞这么复杂,可以直接将下面代码插入 /themes/matery/layout/_partial/layout.ejs 中即可使用:</strong></p>
 <pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript">
     WIDGET <span class="token operator">=</span> <span class="token punctuation">{</span>FID<span class="token punctuation">:</span> <span class="token string">'1tFpFZ5Mtj'</span><span class="token punctuation">}</span>
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://apip.weatherdt.com/float/static/js/r.js?v<span class="token punctuation">=</span>1111<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Html</p>
 <h3 id="2-18-修复-Valine-头像不显示问题"><a href="#2-18-修复-Valine-头像不显示问题" class="headerlink" title="2.18 修复 Valine 头像不显示问题"></a>2.18 修复 Valine 头像不显示问题</h3><p>关于头像显示问题，先去注册<a target="_blank" rel="noopener" href="https://cn.gravatar.com/">Gravatar</a>，之前看文档说是七天的同步时间，结果一直也没有显示头像，检查查看头像链接，发现把&amp;v=1.3.x 去掉就可以了，于是下载 js 文件 valine，下载后然后编辑，搜索关键字 <code>&amp;v=</code>，找到 g.params=”?d=”+(i.indexOf(a)&gt;-1?a:”mp”)+”&amp;v=”+o+d，将 <code>"&amp;v="+o+d</code> 删除即可，然后在 Gravatar 拿到头像的 <code>url</code> 填上去就行了</p>
 <pre class="line-numbers language-yml"><code class="language-yml">valine:
   enable: true
@@ -1265,7 +1192,6 @@ weather:
   pageSize: 10
   placeholder: '没有Github账号的在这里留言评论～' # Comment Box placeholder
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>原因就是链接后跟了个 <code>&amp;v=1.3.x</code>，解决就是将这段删掉就可以了，具体到 <code>Valine.mini.js</code> 文件就是删掉 <code>&amp;v="+o+d</code>即可</p>
 <h3 id="2-19-增加二级菜单"><a href="#2-19-增加二级菜单" class="headerlink" title="2.19 增加二级菜单"></a>2.19 增加二级菜单</h3><p>都知道，我们标题栏宽度有限，我们项目一多了，就放不下了，这时候你肯定就需要一个二级菜单来拆分一下项目，既可以减少标题栏项目数，使之更加清爽，又可以间项目分类，逻辑清晰。</p>
 <p>好了，如果你用的matery主题，那么废话不多说，直接上教程，其实需要修改的就四个地方：matery.css/matery.js/navgation.ejs/mobile-nav.ejs</p>
@@ -1293,7 +1219,6 @@ weather:
     <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>替换成下面的：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 支持二级菜单特性 big  bear  modify <span class="token number">2022.03</span><span class="token punctuation">.</span><span class="token number">15</span>  <span class="token operator">--</span><span class="token operator">></span>
 <span class="token operator">&lt;</span>ul <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"menu-list mobile-menu-list"</span><span class="token operator">></span>
@@ -1344,7 +1269,6 @@ weather:
       <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>第二步，在 /themes/matery/layout/_partial 中找到 navagtion.ejs ，找到下面这段代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"#"</span> data<span class="token operator">-</span>target<span class="token operator">=</span><span class="token string">"mobile-nav"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"sidenav-trigger button-collapse"</span><span class="token operator">></span><span class="token operator">&lt;</span>i <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fa fa-navicon"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>i<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
 <span class="token operator">&lt;</span>ul <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"right"</span><span class="token operator">></span>
@@ -1365,7 +1289,6 @@ weather:
     <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>替换成下面的：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 支持二级菜单特性 big  bear   modify <span class="token number">2022.03</span><span class="token punctuation">.</span><span class="token number">15</span>  <span class="token operator">--</span><span class="token operator">></span>
 <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">"#"</span> data<span class="token operator">-</span>target<span class="token operator">=</span><span class="token string">"mobile-nav"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"sidenav-trigger button-collapse"</span><span class="token operator">></span><span class="token operator">&lt;</span>i <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"fa fa-navicon"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>i<span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
@@ -1413,7 +1336,6 @@ weather:
     <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>第三步，在 /themes/matery/source/css 中找到 matery.css ，在最后添加下面这段代码：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token comment" spellcheck="true">/* 二级菜单样式定义 big  bear   add 2022.03.15 */</span>
 
@@ -1540,7 +1462,6 @@ weather:
     <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">0</span>, <span class="token number">.1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Css</p>
 <p>第四步，在 /themes/matery/source/js 中找到 matery.js ，在最后一个 <code>});</code>前添加下面这段代码：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token comment" spellcheck="true">// 增加二级菜单功能 big  bear   add 2022.03.15</span>
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">".nav-menu>li"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hover</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
@@ -1563,7 +1484,6 @@ weather:
             <span class="token punctuation">}</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>第五步，在主题配置文件.yml修改标题栏内容，按下面格式更改:</p>
 <pre class="line-numbers language-yml"><code class="language-yml">  标题一级: 
     url: /XXX
@@ -1578,7 +1498,6 @@ weather:
         url: /XXX/XXX
         icon: fa-XXXX
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>第六步，source 文件夹新疆对应的标题目录，并放 index.md 模板就行了。</p>
 <p>到这一步就大功告成了，快去体验吧。</p>
 <hr>
@@ -1618,7 +1537,6 @@ weather:
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-generator-sitemap --save     
 <span class="token function">npm</span> <span class="token function">install</span> hexo-generator-baidu-sitemap --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <h5 id="1-1-2-2-修改博客配置文件"><a href="#1-1-2-2-修改博客配置文件" class="headerlink" title="1.1.2.2 修改博客配置文件"></a>1.1.2.2 修改博客配置文件</h5><hr>
 <p>在根目录配置文件<code>.yml</code>中修改<code>url</code>为你的站点地址</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># URL
@@ -1629,7 +1547,6 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>执行完<code>hexo g</code>命令之后就会在网站根目录生成<code>sitemap.xml</code>文件和<code>baidusitemap.xml文件</code>，可以通过：<a target="_blank" rel="noopener" href="https://xiongcuiguo.com/baidusitemap.xml">https://xiongcuiguo.com/baidusitemap.xml</a>, 查看该文件是否生成，其中<code>sitemap.xml</code>文件是搜索引擎通用的文件，<code>baidusitemap.xml</code>是百度专用的<code>sitemap</code>文件。</p>
 <h4 id="1-1-3-向百度提交链接"><a href="#1-1-3-向百度提交链接" class="headerlink" title="1.1.3 向百度提交链接"></a>1.1.3 向百度提交链接</h4><hr>
 <p>然后我们就可以将我们生成的<code>sitemap</code>文件提交给百度，还是在百度站长平台，找到链接提交，这里我们可以看到有两种提交方式，自动提交和手动提交，自动提交又分为主动推送、自动推送和<code>sitemap</code></p>
@@ -1652,7 +1569,6 @@ permalink_defaults:
 <p>安装插件<code>hexo-baidu-url-submit</code></p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-baidu-url-submit --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>然后再根目录的配置文件中新增字段</p>
 <pre class="line-numbers language-yml"><code class="language-yml">baidu_url_submit:
   count: 80             # 提交最新的一个链接
@@ -1660,12 +1576,10 @@ permalink_defaults:
   token: xxxxxxxxxxxxxx # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>再加入新的<code>deploy</code>：</p>
 <pre class="line-numbers language-yml"><code class="language-yml">deploy:
 - type: baidu_url_submitter
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <blockquote>
 <p>**注意,<strong>这里多个 <code>type</code> 的写法应该这么写</strong>,前面那个 <code>type</code> 是我推送到 <code>Github</code> 与 <code>Coding</code>的<code>page</code>页面的配置,后面再讲这个。</p>
 </blockquote>
@@ -1682,7 +1596,6 @@ permalink_defaults:
 <pre class="line-numbers language-yml"><code class="language-yml"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
 baidu_push: true
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>然后主题文件目录加入下面代码，一般在目录<code>/themes/matery/layout/_partial</code>中的<code>head.ejs</code>中加入下面<code>JS</code>代码（有可能你的目录不是这样，原理类似），这样全站都有了：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>baidu_push<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">%</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>script<span class="token operator">></span>
@@ -1701,7 +1614,6 @@ baidu_push: true
     <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
 <span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">}</span> <span class="token operator">%</span><span class="token operator">></span> 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>这样每次访问博客中的页面就会自动向百度提交<code>sitemap</code></p>
 <h5 id="1-1-3-3-sitemap方式"><a href="#1-1-3-3-sitemap方式" class="headerlink" title="1.1.3.3 sitemap方式"></a>1.1.3.3 <strong>sitemap</strong>方式</h5><hr>
 <p>将我们上一步生成的<code>sitemap</code>文件提交到百度就可以了~</p>
@@ -1738,7 +1650,6 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p><code>robots.txt</code> 文件更新至网站后可进入 <code>Google Search Console</code> - 抓取 - <code>robots.txt</code> 测试工具进行测试。</p>
 <p>这里部分参考自<code>Hexo</code>博客搜索 <a target="_blank" rel="noopener" href="https://fedoryx.github.io/Hexo-%E5%8D%9A%E5%AE%A2%E6%90%9C%E7%B4%A2-SEO-%E4%BC%98%E5%8C%96-%E8%B0%B7%E6%AD%8C%E7%AF%87/">SEO优化-谷歌篇</a></p>
 <h3 id="1-3-让其他搜索引擎收录你的站点"><a href="#1-3-让其他搜索引擎收录你的站点" class="headerlink" title="1.3 让其他搜索引擎收录你的站点"></a>1.3 让其他搜索引擎收录你的站点</h3><hr>
@@ -1753,14 +1664,12 @@ root: /
 permalink: :title.html
 permalink_defaults:
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>方案二：</p>
 <p>使用插件优化<code>url</code></p>
 <p>插件<code>hexo-abbrlink</code>实现了这个功能，它将原来的<code>URL</code>地址重新进行了进制转换和再编码。</p>
 <p>安装<code>hexo-abbrlink</code>。</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-abbrlink --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 <p>配置博客根目录下的_config.yml文件。</p>
 <pre class="line-numbers language-yml"><code class="language-yml"># permalink: :title/
 permalink: archives/:abbrlink.html
@@ -1768,7 +1677,6 @@ abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>运行<code>hexo clean</code>和<code>hexo g</code>命令来重新生成文件看看，可以清楚的看到，<code>URL</code>结构成功变为了3层。</p>
 <h3 id="1-5-其他seo优化"><a href="#1-5-其他seo优化" class="headerlink" title="1.5 其他seo优化"></a>1.5 其他seo优化</h3><hr>
 <p><code>seo</code>优化应该说是一个收益延迟的行为，可能你做的优化短期内看不到什么效果，但是一定要坚持，<code>seo</code>优化也是有很深的可以研究的东西，从我们最初的网站设计，和最基础的标签的选择都有很大的关系，网站设计就如我们刚刚说的，要让用户点击三次可以到达网站的任何一个页面，要增加高质量的外链，增加相关推荐（比如说我们经常见到右侧本站的最高阅读的排名列表），然后就是给每一个页面加上<code>keyword</code>和描述</p>
@@ -1798,7 +1706,6 @@ abbrlink:
     <span class="token property">tab-size</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Css</p>
 <p>改为：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector">pre </span><span class="token punctuation">{</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">1.5</span>rem <span class="token number">1.5</span>rem <span class="token number">1.5</span>rem <span class="token number">3.3</span>rem <span class="token important">!important</span><span class="token punctuation">;</span>
@@ -1809,7 +1716,6 @@ abbrlink:
     <span class="token property">tab-size</span><span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Css</p>
 <p>注释掉紧接着的<code>code</code>代码块里面的<code>font-size</code>项，如下：</p>
 <pre class="line-numbers language-css"><code class="language-css"><span class="token selector">code </span><span class="token punctuation">{</span>
     <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">1</span>px <span class="token number">5</span>px<span class="token punctuation">;</span>
@@ -1820,7 +1726,6 @@ abbrlink:
     <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">2</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Css</p>
 <p>好了这下可以显示行号了</p>
 <h2 id="3-优化网站加载速度"><a href="#3-优化网站加载速度" class="headerlink" title="3. 优化网站加载速度"></a>3. 优化网站加载速度</h2><hr>
 <h3 id="3-1-优化图片加载"><a href="#3-1-优化图片加载" class="headerlink" title="3.1 优化图片加载"></a>3.1 优化图片加载</h3><hr>
@@ -1836,21 +1741,18 @@ abbrlink:
     showThumbByDefault<span class="token punctuation">:</span> <span class="token boolean">false</span>   <span class="token comment" spellcheck="true">//这句加上</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>后面加上：</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token function">$</span><span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">'img[data-original]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">parent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">"href"</span><span class="token punctuation">,</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">"data-original"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>再装个插件，<a target="_blank" rel="noopener" href="https://github.com/Troy-Yang/hexo-lazyload-image">https://github.com/Troy-Yang/hexo-lazyload-image</a><br>在博客根目录配置.yml文件加入对应字段，如下：</p>
-<pre class="line-numbers language-yml"><code class="language-yml"># lazyload configuration  2019.08.23
+<pre class="line-numbers language-yml"><code class="language-yml"># lazyload configuration  2022.04.23
 lazyload:
   enable: true 
   onlypost: false
   loadingImg:     # eg ./images/loading.gif
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Yml</p>
 <p>好了，这样实现了博客网站的图片懒加载。</p>
 <h3 id="3-2-Gulp实现代码压缩"><a href="#3-2-Gulp实现代码压缩" class="headerlink" title="3.2 Gulp实现代码压缩"></a>3.2 Gulp实现代码压缩</h3><hr>
 <p><code>Gulp</code>实现代码压缩，以提升网页加载速度。</p>
@@ -1861,7 +1763,6 @@ lazyload:
 <span class="token comment" spellcheck="true"># 额外的功能模块</span>
 <span class="token function">npm</span> <span class="token function">install</span> gulp-debug gulp-clean-css gulp-changed gulp-if gulp-plumber gulp-babel babel-preset-es2015 del --save
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Bash</p>
 <p>2 接下来在博客的根目录下新建gulpfile.js文件，并复制下面的内容到文件中。</p>
 <pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">var</span> gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"gulp"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">var</span> debug <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"gulp-debug"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -2032,7 +1933,6 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment" spellcheck="true">//Gulp4最大的一个改变就是gulp.task函数现在只支持两个参数，分别是任务名和运行任务的函数</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Js</p>
 <p>3 最后 <code>hexo clean</code> &amp;&amp; <code>hexo g</code> &amp;&amp; <code>gulp</code> &amp;&amp; <code>hexo d</code> 就可以了。</p>
 <blockquote>
 <p>注意，很可能你会运行到第三步，也就是运行<code>gulp</code>压缩命令时会报错</p>
@@ -2041,7 +1941,6 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
 <p>那是因为gulp安装的本地版本和hexo自带的版本不对应导致，第三步gulp压缩可以用下面命令强制使用本地版本：</p>
 <pre class="line-numbers language-bash"><code class="language-bash">node ./node_modules/gulp/bin/gulp.js
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Bash</p>
 
                 
             </div>
@@ -2170,6 +2069,33 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '5fafb28506185baec6fc',
+        clientSecret: '8567bb72d1f7e3c5a986c680910de6aab09be3d4',
+        repo: 'xiongcuiguo.github.io',
+        owner: 'xiongcuiguo',
+        admin: ["xiongcuiguo"],
+        id: '2022-03-10T14-41-50',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
@@ -2197,9 +2123,9 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
                 <a href="/archives/ecdd55dc.html">
                     <div class="card-image">
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/MD/1.jpg" class="responsive-img" alt="MD的Emoji表情">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/MD/1.jpg" class="responsive-img" alt="Markdown的Emoji表情">
                         
-                        <span class="card-title">MD的Emoji表情</span>
+                        <span class="card-title">Markdown的Emoji表情</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -2216,8 +2142,8 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/MD/" class="post-category">
-                                    MD
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
                                 </a>
                             
                             
@@ -2227,8 +2153,8 @@ gulp<span class="token punctuation">.</span><span class="token function">task</s
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MD%E8%A1%A8%E6%83%85/">
-                        <span class="chip bg-color">MD表情</span>
+                    <a href="/tags/Markdown%E8%A1%A8%E6%83%85/">
+                        <span class="chip bg-color">Markdown表情</span>
                     </a>
                     
                 </div>
@@ -2491,7 +2417,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">19.7k</span>
+                        class="white-color">19.5k</span>
             
             
             
@@ -2517,13 +2443,13 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/xiongcuiguo" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:1208045640@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -2533,7 +2459,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1208045640" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1208045640" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -2542,10 +2468,6 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
 
 
 
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
 
 </div>
     </div>
