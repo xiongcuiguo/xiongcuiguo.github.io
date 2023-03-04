@@ -42,11 +42,65 @@
   </entry>
   
   <entry>
-    <title>hexo博客matery主题保姆级教程</title>
+    <title>Matery（Hexo）主题保姆级教程</title>
     <link href="https://www.southbear.cn/archives/5bb38c9d.html"/>
     <id>https://www.southbear.cn/archives/5bb38c9d.html</id>
     <published>2022-03-10T06:41:50.000Z</published>
-    <updated>2023-03-03T15:03:19.888Z</updated>
+    <updated>2023-03-04T02:02:40.008Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客配置" scheme="https://www.southbear.cn/categories/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="Hexo" scheme="https://www.southbear.cn/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://www.southbear.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery（Hexo）主题内容加密</title>
+    <link href="https://www.southbear.cn/archives/6d002399.html"/>
+    <id>https://www.southbear.cn/archives/6d002399.html</id>
+    <published>2022-03-04T02:25:52.000Z</published>
+    <updated>2023-03-04T02:39:10.373Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客配置" scheme="https://www.southbear.cn/categories/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/"/>
+    
+    
+    <category term="Hexo" scheme="https://www.southbear.cn/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://www.southbear.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Matery（Hexo）主题加载gittalk插件</title>
+    <link href="https://www.southbear.cn/archives/c609045c.html"/>
+    <id>https://www.southbear.cn/archives/c609045c.html</id>
+    <published>2022-03-04T02:01:41.000Z</published>
+    <updated>2023-03-04T02:21:20.055Z</updated>
     
     
       
@@ -94,11 +148,11 @@
   </entry>
   
   <entry>
-    <title>hexo博客matery主题代码块</title>
+    <title>Matery（Hexo）主题代码块</title>
     <link href="https://www.southbear.cn/archives/e74f738e.html"/>
     <id>https://www.southbear.cn/archives/e74f738e.html</id>
     <published>2022-01-15T02:41:50.000Z</published>
-    <updated>2023-03-03T13:53:37.506Z</updated>
+    <updated>2023-03-04T02:02:58.489Z</updated>
     
     
       
@@ -143,9 +197,9 @@
     
     <category term="Hexo" scheme="https://www.southbear.cn/tags/Hexo/"/>
     
-    <category term="java" scheme="https://www.southbear.cn/tags/java/"/>
-    
     <category term="博客" scheme="https://www.southbear.cn/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="java" scheme="https://www.southbear.cn/tags/java/"/>
     
   </entry>
   
