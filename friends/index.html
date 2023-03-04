@@ -651,10 +651,17 @@
     .valine-card .card-content {
         padding: 20px 20px 5px 20px;
     }
-
+    /* valine 评论框增加背景图片 */
     #vcomments textarea {
         box-sizing: border-box;
         background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
     }
 
     #vcomments p {
@@ -669,9 +676,9 @@
 
     #vcomments a {
         padding: 0 2px;
-        color: #4cbf30;
+        color: #42b983;
         font-weight: 500;
-        text-decoration: none;
+        text-decoration: underline;
     }
 
     #vcomments img {
@@ -877,38 +884,62 @@
         left: unset;
         visibility: visible;
     }
+
+    /* 修复评论第一行位置错位 */
+    .v .vlist .vcard {
+    padding-top: 2.5em !important ;
+    }
 </style>
 
 <div class="card valine-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div id="vcomments" class="card-content" style="display: grid">
-    </div>
+    <div id="vcomments" class="card-content"></div>
 </div>
 
 <script src="/libs/valine/av-min.js"></script>
 <script src="/libs/valine/Valine.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="/libs//libs/jQuery-emoji/dist/css/jquery.emoji.css">
+<script src="/libs//libs/jQuery-emoji/dist/js/jquery.emoji.min.js"></script>
+<script src="/libs//libs/jQuery-emoji/dist/js/emoji.list.js"></script> -->
 <script>
     new Valine({
         el: '#vcomments',
         appId: 'O8PQNQztjnd65Dj1FIHBpLvI-gzGzoHsz',
         appKey: 'ldnT61kRBmBnOVMQX8884SWA',
-        serverURLs: '',
         notify: 'false' === 'true',
         verify: 'false' === 'true',
-        visitor: 'true' === 'true',
-        avatar: 'mm',
+        visitor: 'false' === 'true',
+        avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '欢迎交流讨论...'
+        placeholder: '欢迎交流讨论...',
+
     });
+
+//     function parse_emoji() {
+//     jQuery(".vcontent").emojiParse({
+//       basePath: '/libs/jQuery-emoji/images/emoji',
+//       icons: emojiLists   // 注：详见 js/emoji.list.js
+//     });
+//   }
+  
+//   setTimeout(function() {
+//     // jQuery emoji 解析
+//     parse_emoji();
+//     // jquery emoji 初始化
+//     jQuery(".veditor").emoji({
+//       showTab: true,
+//       animation: 'slide',
+//       basePath: '/libs/jQuery-emoji/images/emoji',
+//       icons: emojiLists  // 注：详见 js/emoji.list.js
+//     });
+//     jQuery(".vmore").on("click", function() {
+//       setTimeout(function() {
+//         parse_emoji();
+//       }, 500);
+//     });
+//   }, 800)
+
 </script>
-
-<!--酷Q推送-->
-
-
             
 
             
@@ -1032,6 +1063,7 @@ function siteTime() { window.setTimeout("siteTime()", 1000);
 </script>
 
 -->
+
 
 
 
